@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace AgroDoc
 {
-    public partial class FormSoilManagement : Form
+    public partial class FormSoilIndex : Form
     {
-        public FormSoilManagement()
+        public FormSoilIndex()
         {
             InitializeComponent();
         }

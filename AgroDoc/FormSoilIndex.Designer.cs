@@ -1,6 +1,6 @@
 ﻿namespace AgroDoc
 {
-    partial class FormSoilManagement
+    partial class FormSoilIndex
     {
         /// <summary>
         /// Required designer variable.
