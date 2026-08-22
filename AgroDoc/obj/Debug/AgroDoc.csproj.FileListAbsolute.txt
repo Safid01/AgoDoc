@@ -1,0 +1,13 @@
+S:\AgroDoc\AgroDoc\bin\Debug\AgroDoc.exe.config
+S:\AgroDoc\AgroDoc\bin\Debug\AgroDoc.exe
+S:\AgroDoc\AgroDoc\bin\Debug\AgroDoc.pdb
+S:\AgroDoc\AgroDoc\obj\Debug\AgroDoc.csproj.AssemblyReference.cache
+S:\AgroDoc\AgroDoc\obj\Debug\AgroDoc.FormLogin.resources
+S:\AgroDoc\AgroDoc\obj\Debug\AgroDoc.Properties.Resources.resources
+S:\AgroDoc\AgroDoc\obj\Debug\AgroDoc.csproj.GenerateResource.cache
+S:\AgroDoc\AgroDoc\obj\Debug\AgroDoc.csproj.CoreCompileInputs.cache
+S:\AgroDoc\AgroDoc\obj\Debug\AgroDoc.exe
+S:\AgroDoc\AgroDoc\obj\Debug\AgroDoc.pdb
+S:\AgroDoc\AgroDoc\obj\Debug\AgroDoc.exe.config
+S:\AgroDoc\AgroDoc\obj\Debug\AgroDoc.FormRegister.resources
+S:\AgroDoc\AgroDoc\obj\Debug\AgroDoc.MainForm.resources
