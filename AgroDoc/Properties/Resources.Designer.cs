@@ -63,6 +63,26 @@ namespace AgroDoc.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BG {
+            get {
+                object obj = ResourceManager.GetObject("BG", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Gemini_Generated_Image_awf5sjawf5sjawf5__1__removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("Gemini_Generated_Image_awf5sjawf5sjawf5__1_-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Gemini_Generated_Image_pgfm7ypgfm7ypgfm_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("Gemini_Generated_Image_pgfm7ypgfm7ypgfm-removebg-preview", resourceCulture);

@@ -117,17 +117,501 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnClear.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Modern No. 20, 11.9999981pt</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnClear.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnClear.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 371</value>
+  </data>
+  <data name="btnClear.Size" type="System.Drawing.Size, System.Drawing">
+    <value>142, 39</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnClear.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="btnClear.Text" xml:space="preserve">
+    <value>Clear Inputs</value>
+  </data>
+  <data name="&gt;&gt;btnClear.Name" xml:space="preserve">
+    <value>btnClear</value>
+  </data>
+  <data name="&gt;&gt;btnClear.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnClear.Parent" xml:space="preserve">
+    <value>grpInputs</value>
+  </data>
+  <data name="&gt;&gt;btnClear.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnCalculate.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Modern No. 20, 11.9999981pt</value>
+  </data>
+  <data name="btnCalculate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>164, 371</value>
+  </data>
+  <data name="btnCalculate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>165, 39</value>
+  </data>
+  <data name="btnCalculate.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="btnCalculate.Text" xml:space="preserve">
+    <value>Suggest Fertilizers</value>
+  </data>
+  <data name="&gt;&gt;btnCalculate.Name" xml:space="preserve">
+    <value>btnCalculate</value>
+  </data>
+  <data name="&gt;&gt;btnCalculate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnCalculate.Parent" xml:space="preserve">
+    <value>grpInputs</value>
+  </data>
+  <data name="&gt;&gt;btnCalculate.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="txtPh.Location" type="System.Drawing.Point, System.Drawing">
+    <value>54, 333</value>
+  </data>
+  <data name="txtPh.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="txtPh.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;txtPh.Name" xml:space="preserve">
+    <value>txtPh</value>
+  </data>
+  <data name="&gt;&gt;txtPh.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtPh.Parent" xml:space="preserve">
+    <value>grpInputs</value>
+  </data>
+  <data name="&gt;&gt;txtPh.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lblPh.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblPh.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblPh.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 307</value>
+  </data>
+  <data name="lblPh.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 13</value>
+  </data>
+  <data name="lblPh.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="lblPh.Text" xml:space="preserve">
+    <value>Current Soil pH Level:</value>
+  </data>
+  <data name="&gt;&gt;lblPh.Name" xml:space="preserve">
+    <value>lblPh</value>
+  </data>
+  <data name="&gt;&gt;lblPh.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblPh.Parent" xml:space="preserve">
+    <value>grpInputs</value>
+  </data>
+  <data name="&gt;&gt;lblPh.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="txtK.Location" type="System.Drawing.Point, System.Drawing">
+    <value>54, 267</value>
+  </data>
+  <data name="txtK.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="txtK.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;txtK.Name" xml:space="preserve">
+    <value>txtK</value>
+  </data>
+  <data name="&gt;&gt;txtK.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtK.Parent" xml:space="preserve">
+    <value>grpInputs</value>
+  </data>
+  <data name="&gt;&gt;txtK.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="lblK.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblK.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblK.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 241</value>
+  </data>
+  <data name="lblK.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 13</value>
+  </data>
+  <data name="lblK.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="lblK.Text" xml:space="preserve">
+    <value>Current Potassium (K - ppm/kg):</value>
+  </data>
+  <data name="&gt;&gt;lblK.Name" xml:space="preserve">
+    <value>lblK</value>
+  </data>
+  <data name="&gt;&gt;lblK.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblK.Parent" xml:space="preserve">
+    <value>grpInputs</value>
+  </data>
+  <data name="&gt;&gt;lblK.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="txtP.Location" type="System.Drawing.Point, System.Drawing">
+    <value>54, 204</value>
+  </data>
+  <data name="txtP.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="txtP.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;txtP.Name" xml:space="preserve">
+    <value>txtP</value>
+  </data>
+  <data name="&gt;&gt;txtP.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtP.Parent" xml:space="preserve">
+    <value>grpInputs</value>
+  </data>
+  <data name="&gt;&gt;txtP.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="lblP.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblP.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblP.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 178</value>
+  </data>
+  <data name="lblP.Size" type="System.Drawing.Size, System.Drawing">
+    <value>165, 13</value>
+  </data>
+  <data name="lblP.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="lblP.Text" xml:space="preserve">
+    <value>Current Phosphorus (P - ppm/kg):</value>
+  </data>
+  <data name="&gt;&gt;lblP.Name" xml:space="preserve">
+    <value>lblP</value>
+  </data>
+  <data name="&gt;&gt;lblP.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblP.Parent" xml:space="preserve">
+    <value>grpInputs</value>
+  </data>
+  <data name="&gt;&gt;lblP.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="txtN.Location" type="System.Drawing.Point, System.Drawing">
+    <value>54, 143</value>
+  </data>
+  <data name="txtN.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="txtN.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;txtN.Name" xml:space="preserve">
+    <value>txtN</value>
+  </data>
+  <data name="&gt;&gt;txtN.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtN.Parent" xml:space="preserve">
+    <value>grpInputs</value>
+  </data>
+  <data name="&gt;&gt;txtN.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="lblN.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblN.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 117</value>
+  </data>
+  <data name="lblN.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 13</value>
+  </data>
+  <data name="lblN.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="lblN.Text" xml:space="preserve">
+    <value>Current Nitrogen (N - ppm/kg):</value>
+  </data>
+  <data name="&gt;&gt;lblN.Name" xml:space="preserve">
+    <value>lblN</value>
+  </data>
+  <data name="&gt;&gt;lblN.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblN.Parent" xml:space="preserve">
+    <value>grpInputs</value>
+  </data>
+  <data name="&gt;&gt;lblN.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="cmbTargetCrop.Location" type="System.Drawing.Point, System.Drawing">
+    <value>54, 51</value>
+  </data>
+  <data name="cmbTargetCrop.Size" type="System.Drawing.Size, System.Drawing">
+    <value>238, 21</value>
+  </data>
+  <data name="cmbTargetCrop.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;cmbTargetCrop.Name" xml:space="preserve">
+    <value>cmbTargetCrop</value>
+  </data>
+  <data name="&gt;&gt;cmbTargetCrop.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmbTargetCrop.Parent" xml:space="preserve">
+    <value>grpInputs</value>
+  </data>
+  <data name="&gt;&gt;cmbTargetCrop.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="lblCrop.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblCrop.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 27</value>
+  </data>
+  <data name="lblCrop.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 13</value>
+  </data>
+  <data name="lblCrop.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lblCrop.Text" xml:space="preserve">
+    <value>Target Crop to Cultivate:</value>
+  </data>
+  <data name="&gt;&gt;lblCrop.Name" xml:space="preserve">
+    <value>lblCrop</value>
+  </data>
+  <data name="&gt;&gt;lblCrop.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblCrop.Parent" xml:space="preserve">
+    <value>grpInputs</value>
+  </data>
+  <data name="&gt;&gt;lblCrop.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="btnLoadLatest.Location" type="System.Drawing.Point, System.Drawing">
+    <value>54, 81</value>
+  </data>
+  <data name="btnLoadLatest.Size" type="System.Drawing.Size, System.Drawing">
+    <value>238, 23</value>
+  </data>
+  <data name="btnLoadLatest.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnLoadLatest.Text" xml:space="preserve">
+    <value>Load My Latest Soil Test</value>
+  </data>
+  <data name="&gt;&gt;btnLoadLatest.Name" xml:space="preserve">
+    <value>btnLoadLatest</value>
+  </data>
+  <data name="&gt;&gt;btnLoadLatest.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnLoadLatest.Parent" xml:space="preserve">
+    <value>grpInputs</value>
+  </data>
+  <data name="&gt;&gt;btnLoadLatest.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="grpInputs.Location" type="System.Drawing.Point, System.Drawing">
+    <value>51, 108</value>
+  </data>
+  <data name="grpInputs.Size" type="System.Drawing.Size, System.Drawing">
+    <value>355, 429</value>
+  </data>
+  <data name="grpInputs.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="grpInputs.Text" xml:space="preserve">
+    <value>Soil Data and Target Crop</value>
+  </data>
+  <data name="&gt;&gt;grpInputs.Name" xml:space="preserve">
+    <value>grpInputs</value>
+  </data>
+  <data name="&gt;&gt;grpInputs.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;grpInputs.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;grpInputs.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="dgvFertilizers.Location" type="System.Drawing.Point, System.Drawing">
+    <value>37, 231</value>
+  </data>
+  <data name="dgvFertilizers.Size" type="System.Drawing.Size, System.Drawing">
+    <value>296, 167</value>
+  </data>
+  <data name="dgvFertilizers.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;dgvFertilizers.Name" xml:space="preserve">
+    <value>dgvFertilizers</value>
+  </data>
+  <data name="&gt;&gt;dgvFertilizers.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dgvFertilizers.Parent" xml:space="preserve">
+    <value>grpResults</value>
+  </data>
+  <data name="&gt;&gt;dgvFertilizers.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblGridHeader.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblGridHeader.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblGridHeader.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 195</value>
+  </data>
+  <data name="lblGridHeader.Size" type="System.Drawing.Size, System.Drawing">
+    <value>213, 13</value>
+  </data>
+  <data name="lblGridHeader.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="lblGridHeader.Text" xml:space="preserve">
+    <value>Prescribed Fertilizers and Application Rates:</value>
+  </data>
+  <data name="&gt;&gt;lblGridHeader.Name" xml:space="preserve">
+    <value>lblGridHeader</value>
+  </data>
+  <data name="&gt;&gt;lblGridHeader.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblGridHeader.Parent" xml:space="preserve">
+    <value>grpResults</value>
+  </data>
+  <data name="&gt;&gt;lblGridHeader.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="txtDeficitSummary.Location" type="System.Drawing.Point, System.Drawing">
+    <value>37, 51</value>
+  </data>
+  <data name="txtDeficitSummary.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txtDeficitSummary.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
+    <value>Vertical</value>
+  </data>
+  <data name="txtDeficitSummary.Size" type="System.Drawing.Size, System.Drawing">
+    <value>296, 118</value>
+  </data>
+  <data name="txtDeficitSummary.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;txtDeficitSummary.Name" xml:space="preserve">
+    <value>txtDeficitSummary</value>
+  </data>
+  <data name="&gt;&gt;txtDeficitSummary.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtDeficitSummary.Parent" xml:space="preserve">
+    <value>grpResults</value>
+  </data>
+  <data name="&gt;&gt;txtDeficitSummary.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lblDeficitHeader.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblDeficitHeader.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 27</value>
+  </data>
+  <data name="lblDeficitHeader.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 13</value>
+  </data>
+  <data name="lblDeficitHeader.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblDeficitHeader.Text" xml:space="preserve">
+    <value>Nutrient Deficit Summary:</value>
+  </data>
+  <data name="&gt;&gt;lblDeficitHeader.Name" xml:space="preserve">
+    <value>lblDeficitHeader</value>
+  </data>
+  <data name="&gt;&gt;lblDeficitHeader.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblDeficitHeader.Parent" xml:space="preserve">
+    <value>grpResults</value>
+  </data>
+  <data name="&gt;&gt;lblDeficitHeader.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="grpResults.Location" type="System.Drawing.Point, System.Drawing">
+    <value>444, 108</value>
+  </data>
+  <data name="grpResults.Size" type="System.Drawing.Size, System.Drawing">
+    <value>366, 429</value>
+  </data>
+  <data name="grpResults.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="grpResults.Text" xml:space="preserve">
+    <value>Diagnosis and Recommended Fertilizers</value>
+  </data>
+  <data name="&gt;&gt;grpResults.Name" xml:space="preserve">
+    <value>grpResults</value>
+  </data>
+  <data name="&gt;&gt;grpResults.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;grpResults.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;grpResults.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>834, 581</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
   </data>

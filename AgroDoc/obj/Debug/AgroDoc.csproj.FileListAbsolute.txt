@@ -11,3 +11,4 @@ S:\AgroDoc\AgroDoc\obj\Debug\AgroDoc.pdb
 S:\AgroDoc\AgroDoc\obj\Debug\AgroDoc.exe.config
 S:\AgroDoc\AgroDoc\obj\Debug\AgroDoc.FormRegister.resources
 S:\AgroDoc\AgroDoc\obj\Debug\AgroDoc.MainForm.resources
+S:\AgroDoc\AgroDoc\obj\Debug\AgroDoc.FormFertilizer.resources

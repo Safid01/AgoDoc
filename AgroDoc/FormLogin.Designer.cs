@@ -37,11 +37,14 @@
             this.btnLogin = new System.Windows.Forms.Button();
             this.lblDont = new System.Windows.Forms.Label();
             this.btnGoToRegister = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTitle
             // 
             this.lblTitle.AutoSize = true;
+            this.lblTitle.BackColor = System.Drawing.Color.Transparent;
             this.lblTitle.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.Location = new System.Drawing.Point(155, 158);
             this.lblTitle.Name = "lblTitle";
@@ -64,6 +67,7 @@
             // lblUsername
             // 
             this.lblUsername.AutoSize = true;
+            this.lblUsername.BackColor = System.Drawing.Color.Transparent;
             this.lblUsername.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsername.Location = new System.Drawing.Point(111, 221);
             this.lblUsername.Name = "lblUsername";
@@ -81,6 +85,7 @@
             // lblPassword
             // 
             this.lblPassword.AutoSize = true;
+            this.lblPassword.BackColor = System.Drawing.Color.Transparent;
             this.lblPassword.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPassword.Location = new System.Drawing.Point(115, 263);
             this.lblPassword.Name = "lblPassword";
@@ -109,6 +114,7 @@
             // lblDont
             // 
             this.lblDont.AutoSize = true;
+            this.lblDont.BackColor = System.Drawing.Color.Transparent;
             this.lblDont.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDont.Location = new System.Drawing.Point(127, 337);
             this.lblDont.Name = "lblDont";
@@ -119,6 +125,7 @@
             // btnGoToRegister
             // 
             this.btnGoToRegister.AutoSize = true;
+            this.btnGoToRegister.BackColor = System.Drawing.Color.Transparent;
             this.btnGoToRegister.Cursor = System.Windows.Forms.Cursors.AppStarting;
             this.btnGoToRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGoToRegister.Location = new System.Drawing.Point(252, 338);
@@ -128,12 +135,26 @@
             this.btnGoToRegister.Text = "Sign Up";
             this.btnGoToRegister.Click += new System.EventHandler(this.btnGoToRegister_Click_1);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::AgroDoc.Properties.Resources.Gemini_Generated_Image_pgfm7ypgfm7ypgfm_removebg_preview;
+            this.pictureBox1.Location = new System.Drawing.Point(79, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(281, 142);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 9;
+            this.pictureBox1.TabStop = false;
+            // 
             // FormLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(434, 405);
+            this.BackColor = System.Drawing.Color.PapayaWhip;
+            this.BackgroundImage = global::AgroDoc.Properties.Resources.BG;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(434, 600);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblSubtitle);
             this.Controls.Add(this.btnGoToRegister);
             this.Controls.Add(this.lblDont);
@@ -148,6 +169,7 @@
             this.Name = "FormLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AgroDoc - Sign In";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -164,6 +186,7 @@
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Label lblDont;
         private System.Windows.Forms.Label btnGoToRegister;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
