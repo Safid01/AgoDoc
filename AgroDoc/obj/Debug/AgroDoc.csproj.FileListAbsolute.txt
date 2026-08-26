@@ -12,3 +12,16 @@ S:\AgroDoc\AgroDoc\obj\Debug\AgroDoc.exe.config
 S:\AgroDoc\AgroDoc\obj\Debug\AgroDoc.FormRegister.resources
 S:\AgroDoc\AgroDoc\obj\Debug\AgroDoc.MainForm.resources
 S:\AgroDoc\AgroDoc\obj\Debug\AgroDoc.FormFertilizer.resources
+D:\Coding\C#\Project\AgoDoc\AgroDoc\bin\Debug\AgroDoc.exe.config
+D:\Coding\C#\Project\AgoDoc\AgroDoc\bin\Debug\AgroDoc.exe
+D:\Coding\C#\Project\AgoDoc\AgroDoc\bin\Debug\AgroDoc.pdb
+D:\Coding\C#\Project\AgoDoc\AgroDoc\obj\Debug\AgroDoc.csproj.AssemblyReference.cache
+D:\Coding\C#\Project\AgoDoc\AgroDoc\obj\Debug\AgroDoc.FormFertilizer.resources
+D:\Coding\C#\Project\AgoDoc\AgroDoc\obj\Debug\AgroDoc.FormLogin.resources
+D:\Coding\C#\Project\AgoDoc\AgroDoc\obj\Debug\AgroDoc.FormRegister.resources
+D:\Coding\C#\Project\AgoDoc\AgroDoc\obj\Debug\AgroDoc.MainForm.resources
+D:\Coding\C#\Project\AgoDoc\AgroDoc\obj\Debug\AgroDoc.Properties.Resources.resources
+D:\Coding\C#\Project\AgoDoc\AgroDoc\obj\Debug\AgroDoc.csproj.GenerateResource.cache
+D:\Coding\C#\Project\AgoDoc\AgroDoc\obj\Debug\AgroDoc.csproj.CoreCompileInputs.cache
+D:\Coding\C#\Project\AgoDoc\AgroDoc\obj\Debug\AgroDoc.exe
+D:\Coding\C#\Project\AgoDoc\AgroDoc\obj\Debug\AgroDoc.pdb
