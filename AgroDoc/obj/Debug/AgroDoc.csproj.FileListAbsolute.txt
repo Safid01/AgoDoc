@@ -39,3 +39,5 @@ S:\AgoDoc\AgroDoc\obj\Debug\AgroDoc.csproj.GenerateResource.cache
 S:\AgoDoc\AgroDoc\obj\Debug\AgroDoc.csproj.CoreCompileInputs.cache
 S:\AgoDoc\AgroDoc\obj\Debug\AgroDoc.exe
 S:\AgoDoc\AgroDoc\obj\Debug\AgroDoc.pdb
+S:\AgoDoc\AgroDoc\obj\Debug\AgroDoc.FormDeleteStorage.resources
+S:\AgoDoc\AgroDoc\obj\Debug\AgroDoc.FormStorageTracker.resources

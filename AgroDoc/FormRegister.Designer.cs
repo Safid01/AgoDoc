@@ -50,9 +50,10 @@
             // 
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.Location = new System.Drawing.Point(177, 63);
+            this.lblTitle.Location = new System.Drawing.Point(118, 41);
+            this.lblTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(306, 37);
+            this.lblTitle.Size = new System.Drawing.Size(213, 26);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "🌱 Farmer Sign Up";
             // 
@@ -61,9 +62,10 @@
             this.lblSubtitle.AutoSize = true;
             this.lblSubtitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSubtitle.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.lblSubtitle.Location = new System.Drawing.Point(141, 124);
+            this.lblSubtitle.Location = new System.Drawing.Point(94, 81);
+            this.lblSubtitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSubtitle.Name = "lblSubtitle";
-            this.lblSubtitle.Size = new System.Drawing.Size(380, 22);
+            this.lblSubtitle.Size = new System.Drawing.Size(257, 15);
             this.lblSubtitle.TabIndex = 1;
             this.lblSubtitle.Text = "Create your account to manage crops & storage";
             // 
@@ -71,9 +73,10 @@
             // 
             this.lblFullName.AutoSize = true;
             this.lblFullName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFullName.Location = new System.Drawing.Point(141, 193);
+            this.lblFullName.Location = new System.Drawing.Point(94, 125);
+            this.lblFullName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFullName.Name = "lblFullName";
-            this.lblFullName.Size = new System.Drawing.Size(106, 22);
+            this.lblFullName.Size = new System.Drawing.Size(77, 15);
             this.lblFullName.TabIndex = 2;
             this.lblFullName.Text = "Full Name:";
             // 
@@ -81,9 +84,10 @@
             // 
             this.lblUsername.AutoSize = true;
             this.lblUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsername.Location = new System.Drawing.Point(141, 236);
+            this.lblUsername.Location = new System.Drawing.Point(94, 153);
+            this.lblUsername.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(106, 22);
+            this.lblUsername.Size = new System.Drawing.Size(77, 15);
             this.lblUsername.TabIndex = 4;
             this.lblUsername.Text = "Username:";
             // 
@@ -91,9 +95,10 @@
             // 
             this.lblPhone.AutoSize = true;
             this.lblPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPhone.Location = new System.Drawing.Point(141, 277);
+            this.lblPhone.Location = new System.Drawing.Point(94, 180);
+            this.lblPhone.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPhone.Name = "lblPhone";
-            this.lblPhone.Size = new System.Drawing.Size(148, 22);
+            this.lblPhone.Size = new System.Drawing.Size(107, 15);
             this.lblPhone.TabIndex = 6;
             this.lblPhone.Text = "Phone Number:";
             // 
@@ -101,9 +106,10 @@
             // 
             this.lblLocation.AutoSize = true;
             this.lblLocation.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLocation.Location = new System.Drawing.Point(141, 323);
+            this.lblLocation.Location = new System.Drawing.Point(94, 210);
+            this.lblLocation.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblLocation.Name = "lblLocation";
-            this.lblLocation.Size = new System.Drawing.Size(173, 22);
+            this.lblLocation.Size = new System.Drawing.Size(123, 15);
             this.lblLocation.TabIndex = 8;
             this.lblLocation.Text = "Location / District:";
             // 
@@ -119,18 +125,20 @@
             "Mymensingh, ",
             "Khulna, ",
             "Sylhet"});
-            this.cmbLocation.Location = new System.Drawing.Point(335, 323);
+            this.cmbLocation.Location = new System.Drawing.Point(223, 210);
+            this.cmbLocation.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbLocation.Name = "cmbLocation";
-            this.cmbLocation.Size = new System.Drawing.Size(186, 28);
+            this.cmbLocation.Size = new System.Drawing.Size(125, 21);
             this.cmbLocation.TabIndex = 9;
             // 
             // lblPassword
             // 
             this.lblPassword.AutoSize = true;
             this.lblPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPassword.Location = new System.Drawing.Point(141, 397);
+            this.lblPassword.Location = new System.Drawing.Point(94, 258);
+            this.lblPassword.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(103, 22);
+            this.lblPassword.Size = new System.Drawing.Size(73, 15);
             this.lblPassword.TabIndex = 10;
             this.lblPassword.Text = "Password:";
             // 
@@ -138,17 +146,19 @@
             // 
             this.lblConfirmPassword.AutoSize = true;
             this.lblConfirmPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblConfirmPassword.Location = new System.Drawing.Point(141, 439);
+            this.lblConfirmPassword.Location = new System.Drawing.Point(94, 285);
+            this.lblConfirmPassword.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblConfirmPassword.Name = "lblConfirmPassword";
-            this.lblConfirmPassword.Size = new System.Drawing.Size(178, 22);
+            this.lblConfirmPassword.Size = new System.Drawing.Size(127, 15);
             this.lblConfirmPassword.TabIndex = 12;
             this.lblConfirmPassword.Text = "Confirm Password:";
             // 
             // btnRegister
             // 
-            this.btnRegister.Location = new System.Drawing.Point(145, 522);
+            this.btnRegister.Location = new System.Drawing.Point(97, 339);
+            this.btnRegister.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(164, 56);
+            this.btnRegister.Size = new System.Drawing.Size(109, 36);
             this.btnRegister.TabIndex = 14;
             this.btnRegister.Text = "Create Account";
             this.btnRegister.UseVisualStyleBackColor = true;
@@ -156,46 +166,52 @@
             // 
             // txtFullName
             // 
-            this.txtFullName.Location = new System.Drawing.Point(263, 193);
+            this.txtFullName.Location = new System.Drawing.Point(175, 125);
+            this.txtFullName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtFullName.Name = "txtFullName";
-            this.txtFullName.Size = new System.Drawing.Size(258, 26);
+            this.txtFullName.Size = new System.Drawing.Size(173, 20);
             this.txtFullName.TabIndex = 16;
             // 
             // txtUsername
             // 
-            this.txtUsername.Location = new System.Drawing.Point(263, 236);
+            this.txtUsername.Location = new System.Drawing.Point(175, 153);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(258, 26);
+            this.txtUsername.Size = new System.Drawing.Size(173, 20);
             this.txtUsername.TabIndex = 17;
             // 
             // txtPhone
             // 
-            this.txtPhone.Location = new System.Drawing.Point(309, 277);
+            this.txtPhone.Location = new System.Drawing.Point(206, 180);
+            this.txtPhone.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtPhone.Name = "txtPhone";
-            this.txtPhone.Size = new System.Drawing.Size(212, 26);
+            this.txtPhone.Size = new System.Drawing.Size(143, 20);
             this.txtPhone.TabIndex = 18;
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(263, 397);
+            this.txtPassword.Location = new System.Drawing.Point(175, 258);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(258, 26);
+            this.txtPassword.Size = new System.Drawing.Size(173, 20);
             this.txtPassword.TabIndex = 19;
             // 
             // txtConfirmPassword
             // 
-            this.txtConfirmPassword.Location = new System.Drawing.Point(335, 439);
+            this.txtConfirmPassword.Location = new System.Drawing.Point(223, 285);
+            this.txtConfirmPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtConfirmPassword.Name = "txtConfirmPassword";
             this.txtConfirmPassword.PasswordChar = '*';
-            this.txtConfirmPassword.Size = new System.Drawing.Size(186, 26);
+            this.txtConfirmPassword.Size = new System.Drawing.Size(125, 20);
             this.txtConfirmPassword.TabIndex = 20;
             // 
             // btnBackToLogin
             // 
-            this.btnBackToLogin.Location = new System.Drawing.Point(357, 522);
+            this.btnBackToLogin.Location = new System.Drawing.Point(238, 339);
+            this.btnBackToLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnBackToLogin.Name = "btnBackToLogin";
-            this.btnBackToLogin.Size = new System.Drawing.Size(164, 56);
+            this.btnBackToLogin.Size = new System.Drawing.Size(109, 36);
             this.btnBackToLogin.TabIndex = 21;
             this.btnBackToLogin.Text = "Already registered? Sign In";
             this.btnBackToLogin.UseVisualStyleBackColor = true;
@@ -203,9 +219,9 @@
             // 
             // FormRegister
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(648, 740);
+            this.ClientSize = new System.Drawing.Size(432, 481);
             this.Controls.Add(this.btnBackToLogin);
             this.Controls.Add(this.txtConfirmPassword);
             this.Controls.Add(this.txtPassword);
@@ -223,11 +239,10 @@
             this.Controls.Add(this.lblSubtitle);
             this.Controls.Add(this.lblTitle);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.Name = "FormRegister";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "AgroDoc";
+            this.Text = "AgroDoc - Sign Up";
             this.Load += new System.EventHandler(this.FormRegister_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

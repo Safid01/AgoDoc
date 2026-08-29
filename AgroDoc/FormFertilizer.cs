@@ -250,5 +250,95 @@ namespace AgroDoc
             txtDeficitSummary.Clear();
             dgvFertilizers.DataSource = null;
         }
+
+        private void btnApplyFertilizer_Click(object sender, EventArgs e)
+        {
+            if (dgvFertilizers.Rows.Count == 0)
+            {
+                MessageBox.Show("No fertilizer recommendations currently active. Please click 'Analyze & Suggest Fertilizers' first.", "Notice", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (!Session.IsLoggedIn)
+            {
+                MessageBox.Show("No active farmer session found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // Standard application batch quantity (e.g., 25 KG standard dose per acre application)
+            decimal standardDoseKg = 25.0m;
+
+            DialogResult confirm = MessageBox.Show($"This will deduct a standard dose ({standardDoseKg} KG) of each prescribed fertilizer from your Storage Inventory. Proceed?",
+                                                 "Confirm Application", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (confirm != DialogResult.Yes) return;
+
+            try
+            {
+                using (SqlConnection conn = DbHelper.GetConnection())
+                {
+                    conn.Open();
+                    int appliedCount = 0;
+                    string shortageList = "";
+
+                    foreach (DataGridViewRow row in dgvFertilizers.Rows)
+                    {
+                        if (row.Cells["FertilizerName"].Value == null) continue;
+                        string fertName = row.Cells["FertilizerName"].Value.ToString();
+
+                        // Check if user has sufficient stock
+                        string checkQuery = "SELECT StockId, QuantityKg FROM FertilizerStock WHERE FarmerId = @FarmerId AND FertilizerName LIKE @FertName";
+                        int stockId = 0;
+                        decimal currentStock = 0;
+                        bool found = false;
+
+                        using (SqlCommand checkCmd = new SqlCommand(checkQuery, conn))
+                        {
+                            checkCmd.Parameters.AddWithValue("@FarmerId", Session.FarmerId);
+                            checkCmd.Parameters.AddWithValue("@FertName", "%" + fertName.Split('(')[0].Trim() + "%");
+
+                            using (SqlDataReader rdr = checkCmd.ExecuteReader())
+                            {
+                                if (rdr.Read())
+                                {
+                                    found = true;
+                                    stockId = Convert.ToInt32(rdr["StockId"]);
+                                    currentStock = Convert.ToDecimal(rdr["QuantityKg"]);
+                                }
+                            }
+                        }
+
+                        if (found && currentStock >= standardDoseKg)
+                        {
+                            // Deduct from stock
+                            string deductSql = "UPDATE FertilizerStock SET QuantityKg = QuantityKg - @Dose, LastUpdated = GETDATE() WHERE StockId = @StockId";
+                            using (SqlCommand dedCmd = new SqlCommand(deductSql, conn))
+                            {
+                                dedCmd.Parameters.AddWithValue("@Dose", standardDoseKg);
+                                dedCmd.Parameters.AddWithValue("@StockId", stockId);
+                                dedCmd.ExecuteNonQuery();
+                                appliedCount++;
+                            }
+                        }
+                        else
+                        {
+                            shortageList += $"• {fertName} (Available: {currentStock} KG, Needed: {standardDoseKg} KG)\r\n";
+                        }
+                    }
+
+                    string resultMsg = $"Applied {appliedCount} fertilizer item(s) to your field and updated inventory.\r\n";
+                    if (!string.IsNullOrEmpty(shortageList))
+                    {
+                        resultMsg += "\r\n⚠️ Could not deduct the following due to insufficient stock:\r\n" + shortageList;
+                    }
+
+                    MessageBox.Show(resultMsg, "Application Summary", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error applying fertilizers: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

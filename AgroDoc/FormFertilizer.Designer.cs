@@ -30,24 +30,25 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormFertilizer));
             this.grpInputs = new System.Windows.Forms.GroupBox();
-            this.btnLoadLatest = new System.Windows.Forms.Button();
-            this.lblCrop = new System.Windows.Forms.Label();
-            this.cmbTargetCrop = new System.Windows.Forms.ComboBox();
-            this.lblN = new System.Windows.Forms.Label();
-            this.txtN = new System.Windows.Forms.TextBox();
-            this.txtP = new System.Windows.Forms.TextBox();
-            this.lblP = new System.Windows.Forms.Label();
-            this.txtK = new System.Windows.Forms.TextBox();
-            this.lblK = new System.Windows.Forms.Label();
+            this.btnClear = new System.Windows.Forms.Button();
+            this.btnCalculate = new System.Windows.Forms.Button();
             this.txtPh = new System.Windows.Forms.TextBox();
             this.lblPh = new System.Windows.Forms.Label();
-            this.btnCalculate = new System.Windows.Forms.Button();
-            this.btnClear = new System.Windows.Forms.Button();
+            this.txtK = new System.Windows.Forms.TextBox();
+            this.lblK = new System.Windows.Forms.Label();
+            this.txtP = new System.Windows.Forms.TextBox();
+            this.lblP = new System.Windows.Forms.Label();
+            this.txtN = new System.Windows.Forms.TextBox();
+            this.lblN = new System.Windows.Forms.Label();
+            this.cmbTargetCrop = new System.Windows.Forms.ComboBox();
+            this.lblCrop = new System.Windows.Forms.Label();
+            this.btnLoadLatest = new System.Windows.Forms.Button();
             this.grpResults = new System.Windows.Forms.GroupBox();
-            this.lblDeficitHeader = new System.Windows.Forms.Label();
-            this.txtDeficitSummary = new System.Windows.Forms.TextBox();
-            this.lblGridHeader = new System.Windows.Forms.Label();
             this.dgvFertilizers = new System.Windows.Forms.DataGridView();
+            this.lblGridHeader = new System.Windows.Forms.Label();
+            this.txtDeficitSummary = new System.Windows.Forms.TextBox();
+            this.lblDeficitHeader = new System.Windows.Forms.Label();
+            this.btnApplyFertilizer = new System.Windows.Forms.Button();
             this.grpInputs.SuspendLayout();
             this.grpResults.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFertilizers)).BeginInit();
@@ -72,54 +73,19 @@
             this.grpInputs.Name = "grpInputs";
             this.grpInputs.TabStop = false;
             // 
-            // btnLoadLatest
+            // btnClear
             // 
-            resources.ApplyResources(this.btnLoadLatest, "btnLoadLatest");
-            this.btnLoadLatest.Name = "btnLoadLatest";
-            this.btnLoadLatest.UseVisualStyleBackColor = true;
-            this.btnLoadLatest.Click += new System.EventHandler(this.btnLoadLatest_Click);
+            resources.ApplyResources(this.btnClear, "btnClear");
+            this.btnClear.Name = "btnClear";
+            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
-            // lblCrop
+            // btnCalculate
             // 
-            resources.ApplyResources(this.lblCrop, "lblCrop");
-            this.lblCrop.Name = "lblCrop";
-            // 
-            // cmbTargetCrop
-            // 
-            this.cmbTargetCrop.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbTargetCrop.FormattingEnabled = true;
-            resources.ApplyResources(this.cmbTargetCrop, "cmbTargetCrop");
-            this.cmbTargetCrop.Name = "cmbTargetCrop";
-            // 
-            // lblN
-            // 
-            resources.ApplyResources(this.lblN, "lblN");
-            this.lblN.Name = "lblN";
-            // 
-            // txtN
-            // 
-            resources.ApplyResources(this.txtN, "txtN");
-            this.txtN.Name = "txtN";
-            // 
-            // txtP
-            // 
-            resources.ApplyResources(this.txtP, "txtP");
-            this.txtP.Name = "txtP";
-            // 
-            // lblP
-            // 
-            resources.ApplyResources(this.lblP, "lblP");
-            this.lblP.Name = "lblP";
-            // 
-            // txtK
-            // 
-            resources.ApplyResources(this.txtK, "txtK");
-            this.txtK.Name = "txtK";
-            // 
-            // lblK
-            // 
-            resources.ApplyResources(this.lblK, "lblK");
-            this.lblK.Name = "lblK";
+            resources.ApplyResources(this.btnCalculate, "btnCalculate");
+            this.btnCalculate.Name = "btnCalculate";
+            this.btnCalculate.UseVisualStyleBackColor = true;
+            this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
             // 
             // txtPh
             // 
@@ -131,22 +97,58 @@
             resources.ApplyResources(this.lblPh, "lblPh");
             this.lblPh.Name = "lblPh";
             // 
-            // btnCalculate
+            // txtK
             // 
-            resources.ApplyResources(this.btnCalculate, "btnCalculate");
-            this.btnCalculate.Name = "btnCalculate";
-            this.btnCalculate.UseVisualStyleBackColor = true;
-            this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
+            resources.ApplyResources(this.txtK, "txtK");
+            this.txtK.Name = "txtK";
             // 
-            // btnClear
+            // lblK
             // 
-            resources.ApplyResources(this.btnClear, "btnClear");
-            this.btnClear.Name = "btnClear";
-            this.btnClear.UseVisualStyleBackColor = true;
-            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            resources.ApplyResources(this.lblK, "lblK");
+            this.lblK.Name = "lblK";
+            // 
+            // txtP
+            // 
+            resources.ApplyResources(this.txtP, "txtP");
+            this.txtP.Name = "txtP";
+            // 
+            // lblP
+            // 
+            resources.ApplyResources(this.lblP, "lblP");
+            this.lblP.Name = "lblP";
+            // 
+            // txtN
+            // 
+            resources.ApplyResources(this.txtN, "txtN");
+            this.txtN.Name = "txtN";
+            // 
+            // lblN
+            // 
+            resources.ApplyResources(this.lblN, "lblN");
+            this.lblN.Name = "lblN";
+            // 
+            // cmbTargetCrop
+            // 
+            this.cmbTargetCrop.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbTargetCrop.FormattingEnabled = true;
+            resources.ApplyResources(this.cmbTargetCrop, "cmbTargetCrop");
+            this.cmbTargetCrop.Name = "cmbTargetCrop";
+            // 
+            // lblCrop
+            // 
+            resources.ApplyResources(this.lblCrop, "lblCrop");
+            this.lblCrop.Name = "lblCrop";
+            // 
+            // btnLoadLatest
+            // 
+            resources.ApplyResources(this.btnLoadLatest, "btnLoadLatest");
+            this.btnLoadLatest.Name = "btnLoadLatest";
+            this.btnLoadLatest.UseVisualStyleBackColor = true;
+            this.btnLoadLatest.Click += new System.EventHandler(this.btnLoadLatest_Click);
             // 
             // grpResults
             // 
+            this.grpResults.Controls.Add(this.btnApplyFertilizer);
             this.grpResults.Controls.Add(this.dgvFertilizers);
             this.grpResults.Controls.Add(this.lblGridHeader);
             this.grpResults.Controls.Add(this.txtDeficitSummary);
@@ -154,21 +156,6 @@
             resources.ApplyResources(this.grpResults, "grpResults");
             this.grpResults.Name = "grpResults";
             this.grpResults.TabStop = false;
-            // 
-            // lblDeficitHeader
-            // 
-            resources.ApplyResources(this.lblDeficitHeader, "lblDeficitHeader");
-            this.lblDeficitHeader.Name = "lblDeficitHeader";
-            // 
-            // txtDeficitSummary
-            // 
-            resources.ApplyResources(this.txtDeficitSummary, "txtDeficitSummary");
-            this.txtDeficitSummary.Name = "txtDeficitSummary";
-            // 
-            // lblGridHeader
-            // 
-            resources.ApplyResources(this.lblGridHeader, "lblGridHeader");
-            this.lblGridHeader.Name = "lblGridHeader";
             // 
             // dgvFertilizers
             // 
@@ -179,6 +166,28 @@
             this.dgvFertilizers.Name = "dgvFertilizers";
             this.dgvFertilizers.ReadOnly = true;
             this.dgvFertilizers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            // 
+            // lblGridHeader
+            // 
+            resources.ApplyResources(this.lblGridHeader, "lblGridHeader");
+            this.lblGridHeader.Name = "lblGridHeader";
+            // 
+            // txtDeficitSummary
+            // 
+            resources.ApplyResources(this.txtDeficitSummary, "txtDeficitSummary");
+            this.txtDeficitSummary.Name = "txtDeficitSummary";
+            // 
+            // lblDeficitHeader
+            // 
+            resources.ApplyResources(this.lblDeficitHeader, "lblDeficitHeader");
+            this.lblDeficitHeader.Name = "lblDeficitHeader";
+            // 
+            // btnApplyFertilizer
+            // 
+            resources.ApplyResources(this.btnApplyFertilizer, "btnApplyFertilizer");
+            this.btnApplyFertilizer.Name = "btnApplyFertilizer";
+            this.btnApplyFertilizer.UseVisualStyleBackColor = true;
+            this.btnApplyFertilizer.Click += new System.EventHandler(this.btnApplyFertilizer_Click);
             // 
             // FormFertilizer
             // 
@@ -220,5 +229,6 @@
         private System.Windows.Forms.Label lblGridHeader;
         private System.Windows.Forms.TextBox txtDeficitSummary;
         private System.Windows.Forms.Label lblDeficitHeader;
+        private System.Windows.Forms.Button btnApplyFertilizer;
     }
 }

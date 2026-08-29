@@ -154,7 +154,7 @@
     <value>Modern No. 20, 11.9999981pt</value>
   </data>
   <data name="btnCalculate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>164, 371</value>
+    <value>174, 371</value>
   </data>
   <data name="btnCalculate.Size" type="System.Drawing.Size, System.Drawing">
     <value>165, 39</value>
@@ -178,7 +178,7 @@
     <value>1</value>
   </data>
   <data name="txtPh.Location" type="System.Drawing.Point, System.Drawing">
-    <value>54, 333</value>
+    <value>100, 333</value>
   </data>
   <data name="txtPh.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 20</value>
@@ -229,7 +229,7 @@
     <value>3</value>
   </data>
   <data name="txtK.Location" type="System.Drawing.Point, System.Drawing">
-    <value>54, 267</value>
+    <value>100, 272</value>
   </data>
   <data name="txtK.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 20</value>
@@ -280,7 +280,7 @@
     <value>5</value>
   </data>
   <data name="txtP.Location" type="System.Drawing.Point, System.Drawing">
-    <value>54, 204</value>
+    <value>100, 204</value>
   </data>
   <data name="txtP.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 20</value>
@@ -331,7 +331,7 @@
     <value>7</value>
   </data>
   <data name="txtN.Location" type="System.Drawing.Point, System.Drawing">
-    <value>54, 143</value>
+    <value>100, 144</value>
   </data>
   <data name="txtN.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 20</value>
@@ -474,11 +474,41 @@
   <data name="&gt;&gt;grpInputs.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="btnApplyFertilizer.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Modern No. 20, 11.9999981pt</value>
+  </data>
+  <data name="btnApplyFertilizer.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnApplyFertilizer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>83, 371</value>
+  </data>
+  <data name="btnApplyFertilizer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>217, 39</value>
+  </data>
+  <data name="btnApplyFertilizer.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="btnApplyFertilizer.Text" xml:space="preserve">
+    <value>Apply Prescribed Fertilizers</value>
+  </data>
+  <data name="&gt;&gt;btnApplyFertilizer.Name" xml:space="preserve">
+    <value>btnApplyFertilizer</value>
+  </data>
+  <data name="&gt;&gt;btnApplyFertilizer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnApplyFertilizer.Parent" xml:space="preserve">
+    <value>grpResults</value>
+  </data>
+  <data name="&gt;&gt;btnApplyFertilizer.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="dgvFertilizers.Location" type="System.Drawing.Point, System.Drawing">
-    <value>37, 231</value>
+    <value>37, 204</value>
   </data>
   <data name="dgvFertilizers.Size" type="System.Drawing.Size, System.Drawing">
-    <value>296, 167</value>
+    <value>296, 149</value>
   </data>
   <data name="dgvFertilizers.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -493,7 +523,7 @@
     <value>grpResults</value>
   </data>
   <data name="&gt;&gt;dgvFertilizers.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="lblGridHeader.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -502,7 +532,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblGridHeader.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 195</value>
+    <value>18, 178</value>
   </data>
   <data name="lblGridHeader.Size" type="System.Drawing.Size, System.Drawing">
     <value>213, 13</value>
@@ -523,7 +553,7 @@
     <value>grpResults</value>
   </data>
   <data name="&gt;&gt;lblGridHeader.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="txtDeficitSummary.Location" type="System.Drawing.Point, System.Drawing">
     <value>37, 51</value>
@@ -550,7 +580,7 @@
     <value>grpResults</value>
   </data>
   <data name="&gt;&gt;txtDeficitSummary.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="lblDeficitHeader.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -577,7 +607,7 @@
     <value>grpResults</value>
   </data>
   <data name="&gt;&gt;lblDeficitHeader.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="grpResults.Location" type="System.Drawing.Point, System.Drawing">
     <value>444, 108</value>
