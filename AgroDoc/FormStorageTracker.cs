@@ -23,6 +23,8 @@ namespace AgroDoc
             }
 
             rbRestock.Checked = true;
+            rbHarvested.Checked = true; // Default harvest action to add stock
+
             PopulateDropdowns();
             LoadFertilizerStock();
             LoadHarvestStock();
@@ -105,7 +107,7 @@ namespace AgroDoc
             }
         }
 
-        // 3. Load Harvest Logs for Logged-In Farmer
+        // 3. Load Harvest Inventory for Logged-In Farmer
         public void LoadHarvestStock()
         {
             try
@@ -113,13 +115,13 @@ namespace AgroDoc
                 using (SqlConnection conn = DbHelper.GetConnection())
                 {
                     string query = @"SELECT HarvestId, CropName AS [Crop], 
-                                            QuantityKg AS [Yield (KG)], 
-                                            CONVERT(VARCHAR(10), HarvestDate, 120) AS [Harvest Date], 
+                                            QuantityKg AS [Current Stock (KG)], 
+                                            CONVERT(VARCHAR(10), HarvestDate, 120) AS [Last Action Date], 
                                             StorageLocation AS [Storage Silo/Place], 
                                             Notes 
                                      FROM HarvestStock 
                                      WHERE FarmerId = @FarmerId 
-                                     ORDER BY HarvestDate DESC";
+                                     ORDER BY CropName";
 
                     using (SqlCommand cmd = new SqlCommand(query, conn))
                     {
@@ -239,49 +241,124 @@ namespace AgroDoc
             }
         }
 
-        // 5. Record New Harvest
+        // 5. Record/Update Harvest Yield (+ Harvested or - Sold)
         private void btnSaveHarvest_Click_1(object sender, EventArgs e)
         {
             if (cmbHarvestCrop.SelectedItem == null)
             {
-                MessageBox.Show("Please select a harvested crop.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Please select a crop.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            if (!decimal.TryParse(txtHarvestQuantity.Text.Trim(), out decimal harvestQty) || harvestQty <= 0)
+            if (!decimal.TryParse(txtHarvestQuantity.Text.Trim(), out decimal enteredQty) || enteredQty <= 0)
             {
-                MessageBox.Show("Please enter a valid harvest yield in KG.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Please enter a valid positive quantity in KG.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
+
+            string cropName = cmbHarvestCrop.SelectedItem.ToString();
+            string location = string.IsNullOrWhiteSpace(txtStorageLocation.Text) ? "Main Granary" : txtStorageLocation.Text.Trim();
+            string notes = txtHarvestNotes.Text.Trim();
+            DateTime actionDate = dtpHarvestDate.Value.Date;
+            bool isHarvested = rbHarvested.Checked;
 
             try
             {
                 using (SqlConnection conn = DbHelper.GetConnection())
                 {
                     conn.Open();
-                    string query = @"INSERT INTO HarvestStock (FarmerId, CropName, QuantityKg, HarvestDate, StorageLocation, Notes) 
-                                     VALUES (@FarmerId, @Crop, @Qty, @Date, @Loc, @Notes)";
 
-                    using (SqlCommand cmd = new SqlCommand(query, conn))
+                    // Check if crop already exists in harvest stock
+                    string selectQuery = "SELECT HarvestId, QuantityKg FROM HarvestStock WHERE FarmerId = @FarmerId AND CropName = @CropName";
+                    decimal currentQty = 0;
+                    int harvestId = 0;
+                    bool exists = false;
+
+                    using (SqlCommand cmdSelect = new SqlCommand(selectQuery, conn))
                     {
-                        cmd.Parameters.AddWithValue("@FarmerId", Session.FarmerId);
-                        cmd.Parameters.AddWithValue("@Crop", cmbHarvestCrop.SelectedItem.ToString());
-                        cmd.Parameters.AddWithValue("@Qty", harvestQty);
-                        cmd.Parameters.AddWithValue("@Date", dtpHarvestDate.Value.Date);
-                        cmd.Parameters.AddWithValue("@Loc", txtStorageLocation.Text.Trim());
-                        cmd.Parameters.AddWithValue("@Notes", txtHarvestNotes.Text.Trim());
+                        cmdSelect.Parameters.AddWithValue("@FarmerId", Session.FarmerId);
+                        cmdSelect.Parameters.AddWithValue("@CropName", cropName);
 
-                        cmd.ExecuteNonQuery();
+                        using (SqlDataReader rdr = cmdSelect.ExecuteReader())
+                        {
+                            if (rdr.Read())
+                            {
+                                exists = true;
+                                harvestId = Convert.ToInt32(rdr["HarvestId"]);
+                                currentQty = Convert.ToDecimal(rdr["QuantityKg"]);
+                            }
+                        }
                     }
 
-                    MessageBox.Show($"Recorded {harvestQty} KG of {cmbHarvestCrop.SelectedItem} harvest!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    if (isHarvested) // Harvested (+)
+                    {
+                        if (exists)
+                        {
+                            string updateSql = @"UPDATE HarvestStock 
+                                                 SET QuantityKg = QuantityKg + @Qty, 
+                                                     HarvestDate = @Date, 
+                                                     StorageLocation = @Loc, 
+                                                     Notes = @Notes 
+                                                 WHERE HarvestId = @HarvestId";
+                            using (SqlCommand cmdUpd = new SqlCommand(updateSql, conn))
+                            {
+                                cmdUpd.Parameters.AddWithValue("@Qty", enteredQty);
+                                cmdUpd.Parameters.AddWithValue("@Date", actionDate);
+                                cmdUpd.Parameters.AddWithValue("@Loc", location);
+                                cmdUpd.Parameters.AddWithValue("@Notes", string.IsNullOrEmpty(notes) ? (object)DBNull.Value : notes);
+                                cmdUpd.Parameters.AddWithValue("@HarvestId", harvestId);
+                                cmdUpd.ExecuteNonQuery();
+                            }
+                        }
+                        else
+                        {
+                            string insertSql = @"INSERT INTO HarvestStock (FarmerId, CropName, QuantityKg, HarvestDate, StorageLocation, Notes) 
+                                                 VALUES (@FarmerId, @Crop, @Qty, @Date, @Loc, @Notes)";
+                            using (SqlCommand cmdIns = new SqlCommand(insertSql, conn))
+                            {
+                                cmdIns.Parameters.AddWithValue("@FarmerId", Session.FarmerId);
+                                cmdIns.Parameters.AddWithValue("@Crop", cropName);
+                                cmdIns.Parameters.AddWithValue("@Qty", enteredQty);
+                                cmdIns.Parameters.AddWithValue("@Date", actionDate);
+                                cmdIns.Parameters.AddWithValue("@Loc", location);
+                                cmdIns.Parameters.AddWithValue("@Notes", string.IsNullOrEmpty(notes) ? (object)DBNull.Value : notes);
+                                cmdIns.ExecuteNonQuery();
+                            }
+                        }
+                        MessageBox.Show($"Added {enteredQty} KG of {cropName} to stock.", "Stock Updated", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else // Sold (-)
+                    {
+                        if (!exists || currentQty < enteredQty)
+                        {
+                            MessageBox.Show($"Insufficient stock! You currently have {currentQty} KG of {cropName} available to sell.", "Cannot Deduct", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            return;
+                        }
+
+                        string deductSql = @"UPDATE HarvestStock 
+                                             SET QuantityKg = QuantityKg - @Qty, 
+                                                 HarvestDate = @Date, 
+                                                 Notes = @Notes 
+                                             WHERE HarvestId = @HarvestId";
+                        using (SqlCommand cmdDed = new SqlCommand(deductSql, conn))
+                        {
+                            cmdDed.Parameters.AddWithValue("@Qty", enteredQty);
+                            cmdDed.Parameters.AddWithValue("@Date", actionDate);
+                            cmdDed.Parameters.AddWithValue("@Notes", string.IsNullOrEmpty(notes) ? "Sold produce" : notes);
+                            cmdDed.Parameters.AddWithValue("@HarvestId", harvestId);
+                            cmdDed.ExecuteNonQuery();
+                        }
+                        MessageBox.Show($"Recorded sale of {enteredQty} KG of {cropName}. Remaining stock: {currentQty - enteredQty} KG.", "Stock Updated", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+
                     txtHarvestQuantity.Text = "0";
+                    txtHarvestNotes.Clear();
                     LoadHarvestStock();
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error saving harvest log: " + ex.Message, "Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error saving harvest transaction: " + ex.Message, "Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -294,6 +371,6 @@ namespace AgroDoc
             // Refresh grids when user returns
             LoadFertilizerStock();
             LoadHarvestStock();
-        }  
+        }
     }
 }

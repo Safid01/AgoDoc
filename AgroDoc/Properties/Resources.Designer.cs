@@ -63,6 +63,46 @@ namespace AgroDoc.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _04 {
+            get {
+                object obj = ResourceManager.GetObject("04", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1 {
+            get {
+                object obj = ResourceManager.GetObject("1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _3203324 {
+            get {
+                object obj = ResourceManager.GetObject("3203324", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap abstract_gradient_neon_lights {
+            get {
+                object obj = ResourceManager.GetObject("abstract-gradient-neon-lights", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap BG {
             get {
                 object obj = ResourceManager.GetObject("BG", resourceCulture);
@@ -73,9 +113,41 @@ namespace AgroDoc.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Gemini_Generated_Image_awf5sjawf5sjawf5__1__removebg_preview {
+        internal static System.Drawing.Bitmap Crop {
             get {
-                object obj = ResourceManager.GetObject("Gemini_Generated_Image_awf5sjawf5sjawf5__1_-removebg-preview", resourceCulture);
+                object obj = ResourceManager.GetObject("Crop", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Download_premium_vector_of_Farmer_controlling_smart_tractor_vector_with_a_phone_digital_farming_by_audi_about_smart_farming__illustration__innovation__agriculture__and_cartoon_2809428 {
+            get {
+                object obj = ResourceManager.GetObject("Download premium vector of Farmer controlling smart tractor vector with a phone d" +
+                        "igital farming by audi about smart farming, illustration, innovation, agricultur" +
+                        "e, and cartoon 2809428", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Ferti {
+            get {
+                object obj = ResourceManager.GetObject("Ferti", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Ferti1 {
+            get {
+                object obj = ResourceManager.GetObject("Ferti1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -86,6 +158,46 @@ namespace AgroDoc.Properties {
         internal static System.Drawing.Bitmap Gemini_Generated_Image_pgfm7ypgfm7ypgfm_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("Gemini_Generated_Image_pgfm7ypgfm7ypgfm-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap soil {
+            get {
+                object obj = ResourceManager.GetObject("soil", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap steptodown_com619259 {
+            get {
+                object obj = ResourceManager.GetObject("steptodown.com619259", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Storage {
+            get {
+                object obj = ResourceManager.GetObject("Storage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Untitled_design__1_ {
+            get {
+                object obj = ResourceManager.GetObject("Untitled design (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -80,7 +80,5 @@ namespace AgroDoc
                 MessageBox.Show("Database Error: " + ex.Message, "Connection Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-       
     }
 }

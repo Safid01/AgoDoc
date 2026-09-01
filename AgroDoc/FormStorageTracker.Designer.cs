@@ -43,6 +43,7 @@
             this.tabHarvest = new System.Windows.Forms.TabPage();
             this.dgvHarvestStock = new System.Windows.Forms.DataGridView();
             this.grpHarvestOps = new System.Windows.Forms.GroupBox();
+            this.btnSaveHarvest = new System.Windows.Forms.Button();
             this.txtHarvestNotes = new System.Windows.Forms.RichTextBox();
             this.lblNotes = new System.Windows.Forms.Label();
             this.txtStorageLocation = new System.Windows.Forms.TextBox();
@@ -53,7 +54,8 @@
             this.lblHarvestQty = new System.Windows.Forms.Label();
             this.cmbHarvestCrop = new System.Windows.Forms.ComboBox();
             this.lblCropName = new System.Windows.Forms.Label();
-            this.btnSaveHarvest = new System.Windows.Forms.Button();
+            this.rbHarvested = new System.Windows.Forms.RadioButton();
+            this.rbSold = new System.Windows.Forms.RadioButton();
             this.tabControl1.SuspendLayout();
             this.tabFertilizer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFertilizerStock)).BeginInit();
@@ -65,12 +67,12 @@
             // 
             // btnGoToDelete
             // 
-            this.btnGoToDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btnGoToDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGoToDelete.ForeColor = System.Drawing.Color.DarkRed;
-            this.btnGoToDelete.Location = new System.Drawing.Point(722, 23);
+            this.btnGoToDelete.BackColor = System.Drawing.Color.IndianRed;
+            this.btnGoToDelete.Font = new System.Drawing.Font("Garamond", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGoToDelete.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnGoToDelete.Location = new System.Drawing.Point(703, 13);
             this.btnGoToDelete.Name = "btnGoToDelete";
-            this.btnGoToDelete.Size = new System.Drawing.Size(109, 44);
+            this.btnGoToDelete.Size = new System.Drawing.Size(128, 44);
             this.btnGoToDelete.TabIndex = 0;
             this.btnGoToDelete.Text = "Delete Entries";
             this.btnGoToDelete.UseVisualStyleBackColor = false;
@@ -80,20 +82,22 @@
             // 
             this.tabControl1.Controls.Add(this.tabFertilizer);
             this.tabControl1.Controls.Add(this.tabHarvest);
-            this.tabControl1.Location = new System.Drawing.Point(10, 73);
+            this.tabControl1.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabControl1.Location = new System.Drawing.Point(10, 51);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(831, 553);
+            this.tabControl1.Size = new System.Drawing.Size(831, 538);
             this.tabControl1.TabIndex = 1;
             // 
             // tabFertilizer
             // 
+            this.tabFertilizer.BackgroundImage = global::AgroDoc.Properties.Resources._3203324;
             this.tabFertilizer.Controls.Add(this.dgvFertilizerStock);
             this.tabFertilizer.Controls.Add(this.grpFertOps);
-            this.tabFertilizer.Location = new System.Drawing.Point(4, 22);
+            this.tabFertilizer.Location = new System.Drawing.Point(4, 25);
             this.tabFertilizer.Name = "tabFertilizer";
             this.tabFertilizer.Padding = new System.Windows.Forms.Padding(3);
-            this.tabFertilizer.Size = new System.Drawing.Size(823, 527);
+            this.tabFertilizer.Size = new System.Drawing.Size(823, 509);
             this.tabFertilizer.TabIndex = 0;
             this.tabFertilizer.Text = "Fertilizer Inventory";
             this.tabFertilizer.UseVisualStyleBackColor = true;
@@ -102,13 +106,13 @@
             // 
             this.dgvFertilizerStock.AllowUserToAddRows = false;
             this.dgvFertilizerStock.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvFertilizerStock.BackgroundColor = System.Drawing.Color.PaleGoldenrod;
+            this.dgvFertilizerStock.BackgroundColor = System.Drawing.Color.LightGreen;
             this.dgvFertilizerStock.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvFertilizerStock.Location = new System.Drawing.Point(19, 124);
+            this.dgvFertilizerStock.Location = new System.Drawing.Point(19, 136);
             this.dgvFertilizerStock.Name = "dgvFertilizerStock";
             this.dgvFertilizerStock.ReadOnly = true;
             this.dgvFertilizerStock.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvFertilizerStock.Size = new System.Drawing.Size(798, 397);
+            this.dgvFertilizerStock.Size = new System.Drawing.Size(798, 367);
             this.dgvFertilizerStock.TabIndex = 1;
             // 
             // grpFertOps
@@ -122,7 +126,7 @@
             this.grpFertOps.Controls.Add(this.lblFertName);
             this.grpFertOps.Location = new System.Drawing.Point(19, 20);
             this.grpFertOps.Name = "grpFertOps";
-            this.grpFertOps.Size = new System.Drawing.Size(566, 98);
+            this.grpFertOps.Size = new System.Drawing.Size(691, 110);
             this.grpFertOps.TabIndex = 0;
             this.grpFertOps.TabStop = false;
             this.grpFertOps.Text = "Update Fertilizer Stock";
@@ -130,10 +134,11 @@
             // btnSaveFertilizer
             // 
             this.btnSaveFertilizer.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnSaveFertilizer.Font = new System.Drawing.Font("Microsoft Uighur", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSaveFertilizer.Location = new System.Drawing.Point(444, 31);
+            this.btnSaveFertilizer.Font = new System.Drawing.Font("Garamond", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSaveFertilizer.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnSaveFertilizer.Location = new System.Drawing.Point(537, 37);
             this.btnSaveFertilizer.Name = "btnSaveFertilizer";
-            this.btnSaveFertilizer.Size = new System.Drawing.Size(90, 41);
+            this.btnSaveFertilizer.Size = new System.Drawing.Size(110, 41);
             this.btnSaveFertilizer.TabIndex = 6;
             this.btnSaveFertilizer.Text = "Update Stock";
             this.btnSaveFertilizer.UseVisualStyleBackColor = false;
@@ -141,27 +146,29 @@
             // 
             // txtFertQuantity
             // 
-            this.txtFertQuantity.Location = new System.Drawing.Point(324, 52);
+            this.txtFertQuantity.Location = new System.Drawing.Point(406, 52);
             this.txtFertQuantity.Name = "txtFertQuantity";
-            this.txtFertQuantity.Size = new System.Drawing.Size(70, 20);
+            this.txtFertQuantity.Size = new System.Drawing.Size(70, 22);
             this.txtFertQuantity.TabIndex = 5;
             this.txtFertQuantity.Text = "0";
             // 
             // lblFertQty
             // 
             this.lblFertQty.AutoSize = true;
-            this.lblFertQty.Location = new System.Drawing.Point(321, 25);
+            this.lblFertQty.Font = new System.Drawing.Font("Garamond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFertQty.Location = new System.Drawing.Point(403, 24);
             this.lblFertQty.Name = "lblFertQty";
-            this.lblFertQty.Size = new System.Drawing.Size(73, 13);
+            this.lblFertQty.Size = new System.Drawing.Size(106, 18);
             this.lblFertQty.TabIndex = 4;
             this.lblFertQty.Text = "Quantity (KG):";
             // 
             // rbUse
             // 
             this.rbUse.AutoSize = true;
-            this.rbUse.Location = new System.Drawing.Point(210, 56);
+            this.rbUse.Font = new System.Drawing.Font("Garamond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbUse.Location = new System.Drawing.Point(260, 56);
             this.rbUse.Name = "rbUse";
-            this.rbUse.Size = new System.Drawing.Size(50, 17);
+            this.rbUse.Size = new System.Drawing.Size(58, 22);
             this.rbUse.TabIndex = 3;
             this.rbUse.TabStop = true;
             this.rbUse.Text = "Used";
@@ -170,9 +177,10 @@
             // rbRestock
             // 
             this.rbRestock.AutoSize = true;
-            this.rbRestock.Location = new System.Drawing.Point(210, 25);
+            this.rbRestock.Font = new System.Drawing.Font("Garamond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbRestock.Location = new System.Drawing.Point(260, 24);
             this.rbRestock.Name = "rbRestock";
-            this.rbRestock.Size = new System.Drawing.Size(77, 17);
+            this.rbRestock.Size = new System.Drawing.Size(92, 22);
             this.rbRestock.TabIndex = 2;
             this.rbRestock.TabStop = true;
             this.rbRestock.Text = "Restocked";
@@ -184,26 +192,28 @@
             this.cmbFertilizerName.FormattingEnabled = true;
             this.cmbFertilizerName.Location = new System.Drawing.Point(24, 52);
             this.cmbFertilizerName.Name = "cmbFertilizerName";
-            this.cmbFertilizerName.Size = new System.Drawing.Size(142, 21);
+            this.cmbFertilizerName.Size = new System.Drawing.Size(195, 24);
             this.cmbFertilizerName.TabIndex = 1;
             // 
             // lblFertName
             // 
             this.lblFertName.AutoSize = true;
+            this.lblFertName.Font = new System.Drawing.Font("Garamond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFertName.Location = new System.Drawing.Point(21, 25);
             this.lblFertName.Name = "lblFertName";
-            this.lblFertName.Size = new System.Drawing.Size(48, 13);
+            this.lblFertName.Size = new System.Drawing.Size(69, 18);
             this.lblFertName.TabIndex = 0;
             this.lblFertName.Text = "Fertilizer:";
             // 
             // tabHarvest
             // 
+            this.tabHarvest.BackgroundImage = global::AgroDoc.Properties.Resources._3203324;
             this.tabHarvest.Controls.Add(this.dgvHarvestStock);
             this.tabHarvest.Controls.Add(this.grpHarvestOps);
-            this.tabHarvest.Location = new System.Drawing.Point(4, 22);
+            this.tabHarvest.Location = new System.Drawing.Point(4, 25);
             this.tabHarvest.Name = "tabHarvest";
             this.tabHarvest.Padding = new System.Windows.Forms.Padding(3);
-            this.tabHarvest.Size = new System.Drawing.Size(823, 527);
+            this.tabHarvest.Size = new System.Drawing.Size(823, 509);
             this.tabHarvest.TabIndex = 1;
             this.tabHarvest.Text = "Harvest Log";
             this.tabHarvest.UseVisualStyleBackColor = true;
@@ -212,16 +222,19 @@
             // 
             this.dgvHarvestStock.AllowUserToAddRows = false;
             this.dgvHarvestStock.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvHarvestStock.BackgroundColor = System.Drawing.Color.LightGreen;
             this.dgvHarvestStock.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvHarvestStock.Location = new System.Drawing.Point(20, 123);
+            this.dgvHarvestStock.Location = new System.Drawing.Point(20, 164);
             this.dgvHarvestStock.Name = "dgvHarvestStock";
             this.dgvHarvestStock.ReadOnly = true;
             this.dgvHarvestStock.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvHarvestStock.Size = new System.Drawing.Size(781, 380);
+            this.dgvHarvestStock.Size = new System.Drawing.Size(781, 339);
             this.dgvHarvestStock.TabIndex = 1;
             // 
             // grpHarvestOps
             // 
+            this.grpHarvestOps.Controls.Add(this.rbSold);
+            this.grpHarvestOps.Controls.Add(this.rbHarvested);
             this.grpHarvestOps.Controls.Add(this.btnSaveHarvest);
             this.grpHarvestOps.Controls.Add(this.txtHarvestNotes);
             this.grpHarvestOps.Controls.Add(this.lblNotes);
@@ -235,75 +248,88 @@
             this.grpHarvestOps.Controls.Add(this.lblCropName);
             this.grpHarvestOps.Location = new System.Drawing.Point(20, 20);
             this.grpHarvestOps.Name = "grpHarvestOps";
-            this.grpHarvestOps.Size = new System.Drawing.Size(781, 97);
+            this.grpHarvestOps.Size = new System.Drawing.Size(781, 138);
             this.grpHarvestOps.TabIndex = 0;
             this.grpHarvestOps.TabStop = false;
             this.grpHarvestOps.Text = "Log New Harvest Entry";
             // 
+            // btnSaveHarvest
+            // 
+            this.btnSaveHarvest.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnSaveHarvest.Font = new System.Drawing.Font("Garamond", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSaveHarvest.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnSaveHarvest.Location = new System.Drawing.Point(684, 49);
+            this.btnSaveHarvest.Name = "btnSaveHarvest";
+            this.btnSaveHarvest.Size = new System.Drawing.Size(83, 46);
+            this.btnSaveHarvest.TabIndex = 10;
+            this.btnSaveHarvest.Text = "Record Harvest";
+            this.btnSaveHarvest.UseVisualStyleBackColor = false;
+            this.btnSaveHarvest.Click += new System.EventHandler(this.btnSaveHarvest_Click_1);
+            // 
             // txtHarvestNotes
             // 
-            this.txtHarvestNotes.Location = new System.Drawing.Point(510, 27);
+            this.txtHarvestNotes.Location = new System.Drawing.Point(515, 27);
             this.txtHarvestNotes.Name = "txtHarvestNotes";
-            this.txtHarvestNotes.Size = new System.Drawing.Size(176, 61);
+            this.txtHarvestNotes.Size = new System.Drawing.Size(159, 105);
             this.txtHarvestNotes.TabIndex = 9;
             this.txtHarvestNotes.Text = "Good moisture condition";
             // 
             // lblNotes
             // 
             this.lblNotes.AutoSize = true;
-            this.lblNotes.Location = new System.Drawing.Point(507, 11);
+            this.lblNotes.Location = new System.Drawing.Point(512, 8);
             this.lblNotes.Name = "lblNotes";
-            this.lblNotes.Size = new System.Drawing.Size(81, 13);
+            this.lblNotes.Size = new System.Drawing.Size(105, 16);
             this.lblNotes.TabIndex = 8;
             this.lblNotes.Text = "Notes / Quality:";
             // 
             // txtStorageLocation
             // 
-            this.txtStorageLocation.Location = new System.Drawing.Point(391, 53);
+            this.txtStorageLocation.Location = new System.Drawing.Point(196, 106);
             this.txtStorageLocation.Name = "txtStorageLocation";
-            this.txtStorageLocation.Size = new System.Drawing.Size(100, 20);
+            this.txtStorageLocation.Size = new System.Drawing.Size(130, 22);
             this.txtStorageLocation.TabIndex = 7;
             this.txtStorageLocation.Text = "Main Werehouse";
             // 
             // lblStorageLoc
             // 
             this.lblStorageLoc.AutoSize = true;
-            this.lblStorageLoc.Location = new System.Drawing.Point(388, 26);
+            this.lblStorageLoc.Location = new System.Drawing.Point(194, 83);
             this.lblStorageLoc.Name = "lblStorageLoc";
-            this.lblStorageLoc.Size = new System.Drawing.Size(91, 13);
+            this.lblStorageLoc.Size = new System.Drawing.Size(116, 16);
             this.lblStorageLoc.TabIndex = 6;
             this.lblStorageLoc.Text = "Storage Location:";
             // 
             // dtpHarvestDate
             // 
-            this.dtpHarvestDate.Location = new System.Drawing.Point(252, 53);
+            this.dtpHarvestDate.Location = new System.Drawing.Point(344, 53);
             this.dtpHarvestDate.Name = "dtpHarvestDate";
-            this.dtpHarvestDate.Size = new System.Drawing.Size(118, 20);
+            this.dtpHarvestDate.Size = new System.Drawing.Size(147, 22);
             this.dtpHarvestDate.TabIndex = 5;
             // 
             // lblHarvestDate
             // 
             this.lblHarvestDate.AutoSize = true;
-            this.lblHarvestDate.Location = new System.Drawing.Point(249, 26);
+            this.lblHarvestDate.Location = new System.Drawing.Point(341, 26);
             this.lblHarvestDate.Name = "lblHarvestDate";
-            this.lblHarvestDate.Size = new System.Drawing.Size(85, 13);
+            this.lblHarvestDate.Size = new System.Drawing.Size(106, 16);
             this.lblHarvestDate.TabIndex = 4;
             this.lblHarvestDate.Text = "Date Harvested:";
             // 
             // txtHarvestQuantity
             // 
-            this.txtHarvestQuantity.Location = new System.Drawing.Point(139, 53);
+            this.txtHarvestQuantity.Location = new System.Drawing.Point(197, 54);
             this.txtHarvestQuantity.Name = "txtHarvestQuantity";
-            this.txtHarvestQuantity.Size = new System.Drawing.Size(96, 20);
+            this.txtHarvestQuantity.Size = new System.Drawing.Size(96, 22);
             this.txtHarvestQuantity.TabIndex = 3;
             this.txtHarvestQuantity.Text = "0";
             // 
             // lblHarvestQty
             // 
             this.lblHarvestQty.AutoSize = true;
-            this.lblHarvestQty.Location = new System.Drawing.Point(136, 26);
+            this.lblHarvestQty.Location = new System.Drawing.Point(194, 28);
             this.lblHarvestQty.Name = "lblHarvestQty";
-            this.lblHarvestQty.Size = new System.Drawing.Size(99, 13);
+            this.lblHarvestQty.Size = new System.Drawing.Size(132, 16);
             this.lblHarvestQty.TabIndex = 2;
             this.lblHarvestQty.Text = "Yield Quantity (KG):";
             // 
@@ -311,40 +337,51 @@
             // 
             this.cmbHarvestCrop.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbHarvestCrop.FormattingEnabled = true;
-            this.cmbHarvestCrop.Location = new System.Drawing.Point(23, 53);
+            this.cmbHarvestCrop.Location = new System.Drawing.Point(19, 53);
             this.cmbHarvestCrop.Name = "cmbHarvestCrop";
-            this.cmbHarvestCrop.Size = new System.Drawing.Size(101, 21);
+            this.cmbHarvestCrop.Size = new System.Drawing.Size(157, 24);
             this.cmbHarvestCrop.TabIndex = 1;
             // 
             // lblCropName
             // 
             this.lblCropName.AutoSize = true;
-            this.lblCropName.Location = new System.Drawing.Point(20, 26);
+            this.lblCropName.Location = new System.Drawing.Point(16, 26);
             this.lblCropName.Name = "lblCropName";
-            this.lblCropName.Size = new System.Drawing.Size(84, 13);
+            this.lblCropName.Size = new System.Drawing.Size(108, 16);
             this.lblCropName.TabIndex = 0;
             this.lblCropName.Text = "Harvested Crop:";
             // 
-            // btnSaveHarvest
+            // rbHarvested
             // 
-            this.btnSaveHarvest.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnSaveHarvest.Font = new System.Drawing.Font("Modern No. 20", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSaveHarvest.Location = new System.Drawing.Point(699, 27);
-            this.btnSaveHarvest.Name = "btnSaveHarvest";
-            this.btnSaveHarvest.Size = new System.Drawing.Size(76, 46);
-            this.btnSaveHarvest.TabIndex = 10;
-            this.btnSaveHarvest.Text = "Record Harvest";
-            this.btnSaveHarvest.UseVisualStyleBackColor = false;
-            this.btnSaveHarvest.Click += new System.EventHandler(this.btnSaveHarvest_Click_1);
+            this.rbHarvested.AutoSize = true;
+            this.rbHarvested.Location = new System.Drawing.Point(19, 83);
+            this.rbHarvested.Name = "rbHarvested";
+            this.rbHarvested.Size = new System.Drawing.Size(89, 20);
+            this.rbHarvested.TabIndex = 11;
+            this.rbHarvested.TabStop = true;
+            this.rbHarvested.Text = "Harvested";
+            this.rbHarvested.UseVisualStyleBackColor = true;
+            // 
+            // rbSold
+            // 
+            this.rbSold.AutoSize = true;
+            this.rbSold.Location = new System.Drawing.Point(19, 109);
+            this.rbSold.Name = "rbSold";
+            this.rbSold.Size = new System.Drawing.Size(52, 20);
+            this.rbSold.TabIndex = 12;
+            this.rbSold.TabStop = true;
+            this.rbSold.Text = "Sold";
+            this.rbSold.UseVisualStyleBackColor = true;
             // 
             // FormStorageTracker
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
-            this.ClientSize = new System.Drawing.Size(846, 630);
-            this.Controls.Add(this.tabControl1);
+            this.BackgroundImage = global::AgroDoc.Properties.Resources._3203324;
+            this.ClientSize = new System.Drawing.Size(846, 592);
             this.Controls.Add(this.btnGoToDelete);
+            this.Controls.Add(this.tabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "FormStorageTracker";
@@ -392,5 +429,7 @@
         private System.Windows.Forms.RichTextBox txtHarvestNotes;
         private System.Windows.Forms.DataGridView dgvHarvestStock;
         private System.Windows.Forms.Button btnSaveHarvest;
+        private System.Windows.Forms.RadioButton rbSold;
+        private System.Windows.Forms.RadioButton rbHarvested;
     }
 }

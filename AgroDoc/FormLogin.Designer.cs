@@ -46,7 +46,7 @@
             this.lblTitle.AutoSize = true;
             this.lblTitle.BackColor = System.Drawing.Color.Transparent;
             this.lblTitle.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.Location = new System.Drawing.Point(155, 158);
+            this.lblTitle.Location = new System.Drawing.Point(159, 142);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(138, 20);
             this.lblTitle.TabIndex = 0;
@@ -58,7 +58,7 @@
             this.lblSubtitle.BackColor = System.Drawing.Color.Transparent;
             this.lblSubtitle.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSubtitle.ForeColor = System.Drawing.Color.IndianRed;
-            this.lblSubtitle.Location = new System.Drawing.Point(76, 187);
+            this.lblSubtitle.Location = new System.Drawing.Point(76, 164);
             this.lblSubtitle.Name = "lblSubtitle";
             this.lblSubtitle.Size = new System.Drawing.Size(278, 16);
             this.lblSubtitle.TabIndex = 1;
@@ -69,7 +69,7 @@
             this.lblUsername.AutoSize = true;
             this.lblUsername.BackColor = System.Drawing.Color.Transparent;
             this.lblUsername.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsername.Location = new System.Drawing.Point(111, 221);
+            this.lblUsername.Location = new System.Drawing.Point(113, 196);
             this.lblUsername.Name = "lblUsername";
             this.lblUsername.Size = new System.Drawing.Size(74, 16);
             this.lblUsername.TabIndex = 2;
@@ -77,7 +77,7 @@
             // 
             // txtUsername
             // 
-            this.txtUsername.Location = new System.Drawing.Point(187, 219);
+            this.txtUsername.Location = new System.Drawing.Point(189, 194);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(126, 20);
             this.txtUsername.TabIndex = 3;
@@ -87,7 +87,7 @@
             this.lblPassword.AutoSize = true;
             this.lblPassword.BackColor = System.Drawing.Color.Transparent;
             this.lblPassword.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPassword.Location = new System.Drawing.Point(115, 263);
+            this.lblPassword.Location = new System.Drawing.Point(117, 238);
             this.lblPassword.Name = "lblPassword";
             this.lblPassword.Size = new System.Drawing.Size(70, 16);
             this.lblPassword.TabIndex = 4;
@@ -95,7 +95,7 @@
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(187, 261);
+            this.txtPassword.Location = new System.Drawing.Point(189, 236);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(126, 20);
@@ -103,7 +103,7 @@
             // 
             // btnLogin
             // 
-            this.btnLogin.Location = new System.Drawing.Point(174, 298);
+            this.btnLogin.Location = new System.Drawing.Point(175, 273);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(90, 28);
             this.btnLogin.TabIndex = 6;
@@ -116,7 +116,7 @@
             this.lblDont.AutoSize = true;
             this.lblDont.BackColor = System.Drawing.Color.Transparent;
             this.lblDont.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDont.Location = new System.Drawing.Point(127, 337);
+            this.lblDont.Location = new System.Drawing.Point(129, 312);
             this.lblDont.Name = "lblDont";
             this.lblDont.Size = new System.Drawing.Size(123, 16);
             this.lblDont.TabIndex = 7;
@@ -128,7 +128,7 @@
             this.btnGoToRegister.BackColor = System.Drawing.Color.Transparent;
             this.btnGoToRegister.Cursor = System.Windows.Forms.Cursors.AppStarting;
             this.btnGoToRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGoToRegister.Location = new System.Drawing.Point(252, 338);
+            this.btnGoToRegister.Location = new System.Drawing.Point(254, 313);
             this.btnGoToRegister.Name = "btnGoToRegister";
             this.btnGoToRegister.Size = new System.Drawing.Size(45, 13);
             this.btnGoToRegister.TabIndex = 8;
@@ -139,7 +139,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::AgroDoc.Properties.Resources.Gemini_Generated_Image_pgfm7ypgfm7ypgfm_removebg_preview;
-            this.pictureBox1.Location = new System.Drawing.Point(79, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(79, -3);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(281, 142);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -151,9 +151,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PapayaWhip;
-            this.BackgroundImage = global::AgroDoc.Properties.Resources.BG;
+            this.BackgroundImage = global::AgroDoc.Properties.Resources.Download_premium_vector_of_Farmer_controlling_smart_tractor_vector_with_a_phone_digital_farming_by_audi_about_smart_farming__illustration__innovation__agriculture__and_cartoon_2809428;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(434, 600);
+            this.ClientSize = new System.Drawing.Size(434, 623);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblSubtitle);
             this.Controls.Add(this.btnGoToRegister);

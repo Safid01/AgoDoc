@@ -117,21 +117,204 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="&gt;&gt;btnClear.Name" xml:space="preserve">
+    <value>btnClear</value>
+  </data>
+  <data name="&gt;&gt;btnClear.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnClear.Parent" xml:space="preserve">
+    <value>grpInputs</value>
+  </data>
+  <data name="&gt;&gt;btnClear.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btnCalculate.Name" xml:space="preserve">
+    <value>btnCalculate</value>
+  </data>
+  <data name="&gt;&gt;btnCalculate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnCalculate.Parent" xml:space="preserve">
+    <value>grpInputs</value>
+  </data>
+  <data name="&gt;&gt;btnCalculate.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;txtPh.Name" xml:space="preserve">
+    <value>txtPh</value>
+  </data>
+  <data name="&gt;&gt;txtPh.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtPh.Parent" xml:space="preserve">
+    <value>grpInputs</value>
+  </data>
+  <data name="&gt;&gt;txtPh.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;lblPh.Name" xml:space="preserve">
+    <value>lblPh</value>
+  </data>
+  <data name="&gt;&gt;lblPh.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblPh.Parent" xml:space="preserve">
+    <value>grpInputs</value>
+  </data>
+  <data name="&gt;&gt;lblPh.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;txtK.Name" xml:space="preserve">
+    <value>txtK</value>
+  </data>
+  <data name="&gt;&gt;txtK.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtK.Parent" xml:space="preserve">
+    <value>grpInputs</value>
+  </data>
+  <data name="&gt;&gt;txtK.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;lblK.Name" xml:space="preserve">
+    <value>lblK</value>
+  </data>
+  <data name="&gt;&gt;lblK.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblK.Parent" xml:space="preserve">
+    <value>grpInputs</value>
+  </data>
+  <data name="&gt;&gt;lblK.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;txtP.Name" xml:space="preserve">
+    <value>txtP</value>
+  </data>
+  <data name="&gt;&gt;txtP.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtP.Parent" xml:space="preserve">
+    <value>grpInputs</value>
+  </data>
+  <data name="&gt;&gt;txtP.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;lblP.Name" xml:space="preserve">
+    <value>lblP</value>
+  </data>
+  <data name="&gt;&gt;lblP.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblP.Parent" xml:space="preserve">
+    <value>grpInputs</value>
+  </data>
+  <data name="&gt;&gt;lblP.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;txtN.Name" xml:space="preserve">
+    <value>txtN</value>
+  </data>
+  <data name="&gt;&gt;txtN.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtN.Parent" xml:space="preserve">
+    <value>grpInputs</value>
+  </data>
+  <data name="&gt;&gt;txtN.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;lblN.Name" xml:space="preserve">
+    <value>lblN</value>
+  </data>
+  <data name="&gt;&gt;lblN.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblN.Parent" xml:space="preserve">
+    <value>grpInputs</value>
+  </data>
+  <data name="&gt;&gt;lblN.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;cmbTargetCrop.Name" xml:space="preserve">
+    <value>cmbTargetCrop</value>
+  </data>
+  <data name="&gt;&gt;cmbTargetCrop.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmbTargetCrop.Parent" xml:space="preserve">
+    <value>grpInputs</value>
+  </data>
+  <data name="&gt;&gt;cmbTargetCrop.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;lblCrop.Name" xml:space="preserve">
+    <value>lblCrop</value>
+  </data>
+  <data name="&gt;&gt;lblCrop.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblCrop.Parent" xml:space="preserve">
+    <value>grpInputs</value>
+  </data>
+  <data name="&gt;&gt;lblCrop.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;btnLoadLatest.Name" xml:space="preserve">
+    <value>btnLoadLatest</value>
+  </data>
+  <data name="&gt;&gt;btnLoadLatest.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnLoadLatest.Parent" xml:space="preserve">
+    <value>grpInputs</value>
+  </data>
+  <data name="&gt;&gt;btnLoadLatest.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="grpInputs.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Georgia, 9.75pt</value>
+  </data>
+  <data name="grpInputs.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="grpInputs.Size" type="System.Drawing.Size, System.Drawing">
+    <value>360, 525</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="grpInputs.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="grpInputs.Text" xml:space="preserve">
+    <value>Soil Data and Target Crop</value>
+  </data>
+  <data name="&gt;&gt;grpInputs.Name" xml:space="preserve">
+    <value>grpInputs</value>
+  </data>
+  <data name="&gt;&gt;grpInputs.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;grpInputs.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;grpInputs.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="btnClear.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Modern No. 20, 11.9999981pt</value>
+    <value>Garamond, 12pt, style=Bold</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btnClear.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="btnClear.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 371</value>
+    <value>128, 411</value>
   </data>
   <data name="btnClear.Size" type="System.Drawing.Size, System.Drawing">
     <value>142, 39</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btnClear.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
   </data>
@@ -151,10 +334,13 @@
     <value>0</value>
   </data>
   <data name="btnCalculate.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Modern No. 20, 11.9999981pt</value>
+    <value>Garamond, 12pt, style=Bold</value>
+  </data>
+  <data name="btnCalculate.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="btnCalculate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>174, 371</value>
+    <value>115, 467</value>
   </data>
   <data name="btnCalculate.Size" type="System.Drawing.Size, System.Drawing">
     <value>165, 39</value>
@@ -178,10 +364,10 @@
     <value>1</value>
   </data>
   <data name="txtPh.Location" type="System.Drawing.Point, System.Drawing">
-    <value>100, 333</value>
+    <value>245, 360</value>
   </data>
   <data name="txtPh.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 20</value>
+    <value>100, 22</value>
   </data>
   <data name="txtPh.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -201,14 +387,17 @@
   <data name="lblPh.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="lblPh.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Garamond, 12pt</value>
+  </data>
   <data name="lblPh.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="lblPh.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 307</value>
+    <value>20, 362</value>
   </data>
   <data name="lblPh.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 13</value>
+    <value>151, 18</value>
   </data>
   <data name="lblPh.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -229,10 +418,10 @@
     <value>3</value>
   </data>
   <data name="txtK.Location" type="System.Drawing.Point, System.Drawing">
-    <value>100, 272</value>
+    <value>245, 298</value>
   </data>
   <data name="txtK.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 20</value>
+    <value>100, 22</value>
   </data>
   <data name="txtK.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -252,14 +441,17 @@
   <data name="lblK.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="lblK.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Garamond, 12pt</value>
+  </data>
   <data name="lblK.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="lblK.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 241</value>
+    <value>20, 300</value>
   </data>
   <data name="lblK.Size" type="System.Drawing.Size, System.Drawing">
-    <value>157, 13</value>
+    <value>219, 18</value>
   </data>
   <data name="lblK.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -280,10 +472,10 @@
     <value>5</value>
   </data>
   <data name="txtP.Location" type="System.Drawing.Point, System.Drawing">
-    <value>100, 204</value>
+    <value>245, 241</value>
   </data>
   <data name="txtP.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 20</value>
+    <value>100, 22</value>
   </data>
   <data name="txtP.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -303,14 +495,17 @@
   <data name="lblP.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="lblP.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Garamond, 12pt</value>
+  </data>
   <data name="lblP.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="lblP.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 178</value>
+    <value>20, 243</value>
   </data>
   <data name="lblP.Size" type="System.Drawing.Size, System.Drawing">
-    <value>165, 13</value>
+    <value>225, 18</value>
   </data>
   <data name="lblP.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -331,10 +526,10 @@
     <value>7</value>
   </data>
   <data name="txtN.Location" type="System.Drawing.Point, System.Drawing">
-    <value>100, 144</value>
+    <value>245, 184</value>
   </data>
   <data name="txtN.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 20</value>
+    <value>100, 22</value>
   </data>
   <data name="txtN.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -354,11 +549,14 @@
   <data name="lblN.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="lblN.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Garamond, 12pt</value>
+  </data>
   <data name="lblN.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 117</value>
+    <value>20, 185</value>
   </data>
   <data name="lblN.Size" type="System.Drawing.Size, System.Drawing">
-    <value>150, 13</value>
+    <value>210, 18</value>
   </data>
   <data name="lblN.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -379,10 +577,10 @@
     <value>9</value>
   </data>
   <data name="cmbTargetCrop.Location" type="System.Drawing.Point, System.Drawing">
-    <value>54, 51</value>
+    <value>100, 79</value>
   </data>
   <data name="cmbTargetCrop.Size" type="System.Drawing.Size, System.Drawing">
-    <value>238, 21</value>
+    <value>192, 24</value>
   </data>
   <data name="cmbTargetCrop.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -402,11 +600,14 @@
   <data name="lblCrop.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="lblCrop.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Garamond, 12pt</value>
+  </data>
   <data name="lblCrop.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 27</value>
+    <value>20, 50</value>
   </data>
   <data name="lblCrop.Size" type="System.Drawing.Size, System.Drawing">
-    <value>122, 13</value>
+    <value>167, 18</value>
   </data>
   <data name="lblCrop.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -426,11 +627,17 @@
   <data name="&gt;&gt;lblCrop.ZOrder" xml:space="preserve">
     <value>11</value>
   </data>
+  <data name="btnLoadLatest.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Garamond, 12pt, style=Bold</value>
+  </data>
+  <data name="btnLoadLatest.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="btnLoadLatest.Location" type="System.Drawing.Point, System.Drawing">
-    <value>54, 81</value>
+    <value>100, 122</value>
   </data>
   <data name="btnLoadLatest.Size" type="System.Drawing.Size, System.Drawing">
-    <value>238, 23</value>
+    <value>192, 28</value>
   </data>
   <data name="btnLoadLatest.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -450,38 +657,14 @@
   <data name="&gt;&gt;btnLoadLatest.ZOrder" xml:space="preserve">
     <value>12</value>
   </data>
-  <data name="grpInputs.Location" type="System.Drawing.Point, System.Drawing">
-    <value>51, 108</value>
-  </data>
-  <data name="grpInputs.Size" type="System.Drawing.Size, System.Drawing">
-    <value>355, 429</value>
-  </data>
-  <data name="grpInputs.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="grpInputs.Text" xml:space="preserve">
-    <value>Soil Data and Target Crop</value>
-  </data>
-  <data name="&gt;&gt;grpInputs.Name" xml:space="preserve">
-    <value>grpInputs</value>
-  </data>
-  <data name="&gt;&gt;grpInputs.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;grpInputs.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;grpInputs.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="btnApplyFertilizer.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Modern No. 20, 11.9999981pt</value>
+    <value>Garamond, 12pt, style=Bold</value>
   </data>
   <data name="btnApplyFertilizer.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="btnApplyFertilizer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>83, 371</value>
+    <value>135, 480</value>
   </data>
   <data name="btnApplyFertilizer.Size" type="System.Drawing.Size, System.Drawing">
     <value>217, 39</value>
@@ -505,10 +688,10 @@
     <value>0</value>
   </data>
   <data name="dgvFertilizers.Location" type="System.Drawing.Point, System.Drawing">
-    <value>37, 204</value>
+    <value>6, 207</value>
   </data>
   <data name="dgvFertilizers.Size" type="System.Drawing.Size, System.Drawing">
-    <value>296, 149</value>
+    <value>465, 267</value>
   </data>
   <data name="dgvFertilizers.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -528,14 +711,17 @@
   <data name="lblGridHeader.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="lblGridHeader.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Garamond, 14.25pt, style=Bold</value>
+  </data>
   <data name="lblGridHeader.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="lblGridHeader.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 178</value>
+    <value>2, 183</value>
   </data>
   <data name="lblGridHeader.Size" type="System.Drawing.Size, System.Drawing">
-    <value>213, 13</value>
+    <value>375, 21</value>
   </data>
   <data name="lblGridHeader.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -555,8 +741,11 @@
   <data name="&gt;&gt;lblGridHeader.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="txtDeficitSummary.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Eras Medium ITC, 9.75pt</value>
+  </data>
   <data name="txtDeficitSummary.Location" type="System.Drawing.Point, System.Drawing">
-    <value>37, 51</value>
+    <value>64, 42</value>
   </data>
   <data name="txtDeficitSummary.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -565,7 +754,7 @@
     <value>Vertical</value>
   </data>
   <data name="txtDeficitSummary.Size" type="System.Drawing.Size, System.Drawing">
-    <value>296, 118</value>
+    <value>366, 134</value>
   </data>
   <data name="txtDeficitSummary.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -585,11 +774,14 @@
   <data name="lblDeficitHeader.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="lblDeficitHeader.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Garamond, 14.25pt, style=Bold</value>
+  </data>
   <data name="lblDeficitHeader.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 27</value>
+    <value>30, 18</value>
   </data>
   <data name="lblDeficitHeader.Size" type="System.Drawing.Size, System.Drawing">
-    <value>126, 13</value>
+    <value>229, 21</value>
   </data>
   <data name="lblDeficitHeader.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -609,11 +801,14 @@
   <data name="&gt;&gt;lblDeficitHeader.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
+  <data name="grpResults.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Georgia, 9.75pt</value>
+  </data>
   <data name="grpResults.Location" type="System.Drawing.Point, System.Drawing">
-    <value>444, 108</value>
+    <value>378, 12</value>
   </data>
   <data name="grpResults.Size" type="System.Drawing.Size, System.Drawing">
-    <value>366, 429</value>
+    <value>478, 525</value>
   </data>
   <data name="grpResults.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -640,7 +835,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>834, 581</value>
+    <value>861, 553</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormFertilizer));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.grpInputs = new System.Windows.Forms.GroupBox();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnCalculate = new System.Windows.Forms.Button();
@@ -44,11 +45,11 @@
             this.lblCrop = new System.Windows.Forms.Label();
             this.btnLoadLatest = new System.Windows.Forms.Button();
             this.grpResults = new System.Windows.Forms.GroupBox();
+            this.btnApplyFertilizer = new System.Windows.Forms.Button();
             this.dgvFertilizers = new System.Windows.Forms.DataGridView();
             this.lblGridHeader = new System.Windows.Forms.Label();
             this.txtDeficitSummary = new System.Windows.Forms.TextBox();
             this.lblDeficitHeader = new System.Windows.Forms.Label();
-            this.btnApplyFertilizer = new System.Windows.Forms.Button();
             this.grpInputs.SuspendLayout();
             this.grpResults.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFertilizers)).BeginInit();
@@ -56,6 +57,7 @@
             // 
             // grpInputs
             // 
+            this.grpInputs.BackColor = System.Drawing.Color.Transparent;
             this.grpInputs.Controls.Add(this.btnClear);
             this.grpInputs.Controls.Add(this.btnCalculate);
             this.grpInputs.Controls.Add(this.txtPh);
@@ -75,16 +77,20 @@
             // 
             // btnClear
             // 
+            this.btnClear.BackColor = System.Drawing.Color.IndianRed;
             resources.ApplyResources(this.btnClear, "btnClear");
+            this.btnClear.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnClear.Name = "btnClear";
-            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.UseVisualStyleBackColor = false;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnCalculate
             // 
+            this.btnCalculate.BackColor = System.Drawing.Color.ForestGreen;
             resources.ApplyResources(this.btnCalculate, "btnCalculate");
+            this.btnCalculate.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnCalculate.Name = "btnCalculate";
-            this.btnCalculate.UseVisualStyleBackColor = true;
+            this.btnCalculate.UseVisualStyleBackColor = false;
             this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
             // 
             // txtPh
@@ -141,13 +147,16 @@
             // 
             // btnLoadLatest
             // 
+            this.btnLoadLatest.BackColor = System.Drawing.SystemColors.MenuHighlight;
             resources.ApplyResources(this.btnLoadLatest, "btnLoadLatest");
+            this.btnLoadLatest.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnLoadLatest.Name = "btnLoadLatest";
-            this.btnLoadLatest.UseVisualStyleBackColor = true;
+            this.btnLoadLatest.UseVisualStyleBackColor = false;
             this.btnLoadLatest.Click += new System.EventHandler(this.btnLoadLatest_Click);
             // 
             // grpResults
             // 
+            this.grpResults.BackColor = System.Drawing.Color.Transparent;
             this.grpResults.Controls.Add(this.btnApplyFertilizer);
             this.grpResults.Controls.Add(this.dgvFertilizers);
             this.grpResults.Controls.Add(this.lblGridHeader);
@@ -157,11 +166,30 @@
             this.grpResults.Name = "grpResults";
             this.grpResults.TabStop = false;
             // 
+            // btnApplyFertilizer
+            // 
+            this.btnApplyFertilizer.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            resources.ApplyResources(this.btnApplyFertilizer, "btnApplyFertilizer");
+            this.btnApplyFertilizer.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnApplyFertilizer.Name = "btnApplyFertilizer";
+            this.btnApplyFertilizer.UseVisualStyleBackColor = false;
+            this.btnApplyFertilizer.Click += new System.EventHandler(this.btnApplyFertilizer_Click);
+            // 
             // dgvFertilizers
             // 
             this.dgvFertilizers.AllowUserToAddRows = false;
             this.dgvFertilizers.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvFertilizers.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders;
+            this.dgvFertilizers.BackgroundColor = System.Drawing.Color.LightGreen;
             this.dgvFertilizers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Georgia", 9.75F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvFertilizers.DefaultCellStyle = dataGridViewCellStyle2;
             resources.ApplyResources(this.dgvFertilizers, "dgvFertilizers");
             this.dgvFertilizers.Name = "dgvFertilizers";
             this.dgvFertilizers.ReadOnly = true;
@@ -174,6 +202,7 @@
             // 
             // txtDeficitSummary
             // 
+            this.txtDeficitSummary.BackColor = System.Drawing.Color.LightGreen;
             resources.ApplyResources(this.txtDeficitSummary, "txtDeficitSummary");
             this.txtDeficitSummary.Name = "txtDeficitSummary";
             // 
@@ -182,17 +211,12 @@
             resources.ApplyResources(this.lblDeficitHeader, "lblDeficitHeader");
             this.lblDeficitHeader.Name = "lblDeficitHeader";
             // 
-            // btnApplyFertilizer
-            // 
-            resources.ApplyResources(this.btnApplyFertilizer, "btnApplyFertilizer");
-            this.btnApplyFertilizer.Name = "btnApplyFertilizer";
-            this.btnApplyFertilizer.UseVisualStyleBackColor = true;
-            this.btnApplyFertilizer.Click += new System.EventHandler(this.btnApplyFertilizer_Click);
-            // 
             // FormFertilizer
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Thistle;
+            this.BackgroundImage = global::AgroDoc.Properties.Resources._3203324;
             this.Controls.Add(this.grpResults);
             this.Controls.Add(this.grpInputs);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
