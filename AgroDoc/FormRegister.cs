@@ -111,5 +111,10 @@ namespace AgroDoc
         {
             this.Close(); // Closes registration dialog, revealing FormLogin behind it
         }
+
+        private void txtUsername_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
