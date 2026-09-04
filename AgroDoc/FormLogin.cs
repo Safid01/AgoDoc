@@ -15,7 +15,7 @@ namespace AgroDoc
             FormRegister regForm = new FormRegister();
             this.Hide();
             regForm.ShowDialog();
-            this.Show(); // Re-shows login form once user finishes or cancels registration
+            this.Show(); 
         }
         private void btnLogin_Click_1(object sender, EventArgs e)
         {
@@ -35,7 +35,7 @@ namespace AgroDoc
                 {
                     conn.Open();
 
-                    // Parameterized query prevents SQL injection attacks
+                   
                     string query = @"SELECT FarmerId, FullName, Username, Location 
                                      FROM Farmers 
                                      WHERE Username = @username AND Password = @password";
@@ -49,7 +49,6 @@ namespace AgroDoc
                         {
                             if (reader.Read())
                             {
-                                // Store user data in global Session
                                 Session.FarmerId = Convert.ToInt32(reader["FarmerId"]);
                                 Session.FullName = reader["FullName"].ToString();
                                 Session.Username = reader["Username"].ToString();
@@ -57,12 +56,10 @@ namespace AgroDoc
 
                                 MessageBox.Show($"Welcome back, {Session.FullName}!", "Login Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                                // Hide login form and show Main Dashboard
                                 this.Hide();
                                 MainForm mainForm = new MainForm();
                                 mainForm.ShowDialog();
 
-                                // Close application completely when MainForm closes
                                 this.Close();
                             }
                             else

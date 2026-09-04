@@ -40,3 +40,7 @@ S:\AgoDoc\AgroDoc\bin\Debug\AgroDoc.exe
 S:\AgoDoc\AgroDoc\bin\Debug\AgroDoc.pdb
 S:\AgoDoc\AgroDoc\obj\Debug\AgroDoc.exe
 S:\AgoDoc\AgroDoc\obj\Debug\AgroDoc.pdb
+D:\Coding\C#\Project\AgoDoc\AgroDoc\obj\Debug\AgroDoc.FormDeleteStorage.resources
+D:\Coding\C#\Project\AgoDoc\AgroDoc\obj\Debug\AgroDoc.FormStorageTracker.resources
+D:\Coding\C#\Project\AgoDoc\AgroDoc\obj\Debug\AgroDoc.FormSoilIndex.resources
+D:\Coding\C#\Project\AgoDoc\AgroDoc\obj\Debug\AgroDoc.FormCropSuggestion.resources

@@ -23,14 +23,13 @@ namespace AgroDoc
             }
 
             rbRestock.Checked = true;
-            rbHarvested.Checked = true; // Default harvest action to add stock
+            rbHarvested.Checked = true; 
 
             PopulateDropdowns();
             LoadFertilizerStock();
             LoadHarvestStock();
         }
 
-        // 1. Populate Dropdowns from Database Reference Tables
         private void PopulateDropdowns()
         {
             try
@@ -74,7 +73,7 @@ namespace AgroDoc
             }
         }
 
-        // 2. Load Fertilizer Inventory for Logged-In Farmer
+        // Load Fertilizer Inventory for Logged-In Farmer
         public void LoadFertilizerStock()
         {
             try
@@ -107,7 +106,7 @@ namespace AgroDoc
             }
         }
 
-        // 3. Load Harvest Inventory for Logged-In Farmer
+        // Load Harvest Inventory for Logged-In Farmer
         public void LoadHarvestStock()
         {
             try
@@ -142,7 +141,7 @@ namespace AgroDoc
             }
         }
 
-        // 4. Save/Update Fertilizer Stock (+ or -)
+        // Save/Update Fertilizer Stock (+ or -)
         private void btnSaveFertilizer_Click(object sender, EventArgs e)
         {
             if (cmbFertilizerName.SelectedItem == null)
@@ -241,7 +240,7 @@ namespace AgroDoc
             }
         }
 
-        // 5. Record/Update Harvest Yield (+ Harvested or - Sold)
+        // Record/Update Harvest Yield (+ Harvested or - Sold)
         private void btnSaveHarvest_Click_1(object sender, EventArgs e)
         {
             if (cmbHarvestCrop.SelectedItem == null)
@@ -362,13 +361,12 @@ namespace AgroDoc
             }
         }
 
-        // 6. Open Dedicated Delete Form
+        // Open Dedicated Delete Form
         private void btnGoToDelete_Click(object sender, EventArgs e)
         {
             FormDeleteStorage deleteForm = new FormDeleteStorage();
             deleteForm.ShowDialog();
 
-            // Refresh grids when user returns
             LoadFertilizerStock();
             LoadHarvestStock();
         }

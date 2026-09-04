@@ -123,7 +123,6 @@ namespace AgroDoc
                 {
                     conn.Open();
 
-                    // Step A: Retrieve target crop nutrient requirements
                     int minN = 0, maxN = 0, minP = 0, maxP = 0, minK = 0, maxK = 0;
                     decimal minPh = 0, maxPh = 0;
                     string cropName = "";
@@ -149,7 +148,6 @@ namespace AgroDoc
                         }
                     }
 
-                    // Step B: Calculate Deficits
                     string summary = $"Diagnostic for '{cropName}':\r\n";
                     bool needsN = false, needsP = false, needsK = false, needsLime = false, needsGypsum = false;
 
@@ -204,10 +202,9 @@ namespace AgroDoc
 
                     txtDeficitSummary.Text = summary;
 
-                    // Step C: Build SQL Filter for Fertilizers Table
                     string fertQuery = @"SELECT FertilizerName, TargetNutrient, ApplicationRate, Description 
                                          FROM Fertilizers 
-                                         WHERE 1=0"; // default false condition
+                                         WHERE 1=0";
 
                     if (needsN) fertQuery += " OR TargetNutrient = 'Nitrogen'";
                     if (needsP) fertQuery += " OR TargetNutrient = 'Phosphorus'";
@@ -265,7 +262,7 @@ namespace AgroDoc
                 return;
             }
 
-            // Standard application batch quantity (e.g., 25 KG standard dose per acre application)
+            
             decimal standardDoseKg = 25.0m;
 
             DialogResult confirm = MessageBox.Show($"This will deduct a standard dose ({standardDoseKg} KG) of each prescribed fertilizer from your Storage Inventory. Proceed?",

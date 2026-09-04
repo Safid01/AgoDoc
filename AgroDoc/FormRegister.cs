@@ -13,7 +13,6 @@ namespace AgroDoc
 
         private void FormRegister_Load(object sender, EventArgs e)
         {
-            // Populate common default districts if ComboBox is empty
             if (cmbLocation.Items.Count == 0)
             {
                 cmbLocation.Items.AddRange(new string[] {
@@ -95,7 +94,7 @@ namespace AgroDoc
                         if (rowsAffected > 0)
                         {
                             MessageBox.Show("Account successfully created! You can now sign in.", "Registration Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                            this.Close(); // Returns to FormLogin
+                            this.Close(); 
                         }
                     }
                 }
@@ -106,10 +105,9 @@ namespace AgroDoc
             }
         }
 
-        // 2. Return to Login
         private void btnBackToLogin_Click(object sender, EventArgs e)
         {
-            this.Close(); // Closes registration dialog, revealing FormLogin behind it
+            this.Close(); 
         }
 
         private void txtUsername_TextChanged(object sender, EventArgs e)

@@ -70,6 +70,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data\CropRepository.cs" />
     <Compile Include="DbHelper.cs" />
     <Compile Include="FormCropSuggestion.cs">
       <SubType>Form</SubType>
@@ -119,9 +120,13 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\Crop.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Session.cs" />
+    <EmbeddedResource Include="FormCropSuggestion.resx">
+      <DependentUpon>FormCropSuggestion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormDeleteStorage.resx">
       <DependentUpon>FormDeleteStorage.cs</DependentUpon>
     </EmbeddedResource>
@@ -133,6 +138,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormRegister.resx">
       <DependentUpon>FormRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSoilIndex.resx">
+      <DependentUpon>FormSoilIndex.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormStorageTracker.resx">
       <DependentUpon>FormStorageTracker.cs</DependentUpon>

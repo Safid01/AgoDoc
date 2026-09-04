@@ -58,13 +58,13 @@ namespace AgroDoc
             DialogResult confirm = MessageBox.Show("Are you sure you want to log out?", "Log Out", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (confirm == DialogResult.Yes)
             {
-                Session.Clear(); // Erase current user memory
+                Session.Clear(); 
                 this.Hide();
 
                 FormLogin login = new FormLogin();
                 login.ShowDialog();
 
-                this.Close(); // Safely exit if login closes
+                this.Close(); 
             }
         }
 

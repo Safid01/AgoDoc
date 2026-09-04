@@ -3,7 +3,6 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Windows.Forms;
-// Explicitly alias WinForms Charting to avoid collision with System.Web
 using WinChart = System.Windows.Forms.DataVisualization.Charting;
 
 namespace AgroDoc

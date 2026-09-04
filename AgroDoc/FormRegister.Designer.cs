@@ -44,29 +44,31 @@
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.txtConfirmPassword = new System.Windows.Forms.TextBox();
             this.btnBackToLogin = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTitle
             // 
             this.lblTitle.AutoSize = true;
             this.lblTitle.BackColor = System.Drawing.Color.Transparent;
-            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.Font = new System.Drawing.Font("Mongolian Baiti", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.DarkGreen;
-            this.lblTitle.Location = new System.Drawing.Point(179, 9);
+            this.lblTitle.Location = new System.Drawing.Point(176, 29);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(306, 37);
+            this.lblTitle.Size = new System.Drawing.Size(279, 34);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "🌱 Farmer Sign Up";
             // 
             // lblSubtitle
             // 
             this.lblSubtitle.AutoSize = true;
-            this.lblSubtitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSubtitle.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSubtitle.ForeColor = System.Drawing.Color.Green;
             this.lblSubtitle.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.lblSubtitle.Location = new System.Drawing.Point(137, 46);
+            this.lblSubtitle.Location = new System.Drawing.Point(134, 80);
             this.lblSubtitle.Name = "lblSubtitle";
-            this.lblSubtitle.Size = new System.Drawing.Size(393, 22);
+            this.lblSubtitle.Size = new System.Drawing.Size(390, 23);
             this.lblSubtitle.TabIndex = 1;
             this.lblSubtitle.Text = "Create your account to manage crops N storage";
             // 
@@ -74,10 +76,10 @@
             // 
             this.lblFullName.AutoSize = true;
             this.lblFullName.BackColor = System.Drawing.Color.Transparent;
-            this.lblFullName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFullName.Location = new System.Drawing.Point(137, 290);
+            this.lblFullName.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFullName.Location = new System.Drawing.Point(134, 345);
             this.lblFullName.Name = "lblFullName";
-            this.lblFullName.Size = new System.Drawing.Size(106, 22);
+            this.lblFullName.Size = new System.Drawing.Size(113, 21);
             this.lblFullName.TabIndex = 2;
             this.lblFullName.Text = "Full Name:";
             // 
@@ -85,10 +87,10 @@
             // 
             this.lblUsername.AutoSize = true;
             this.lblUsername.BackColor = System.Drawing.Color.Transparent;
-            this.lblUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsername.Location = new System.Drawing.Point(137, 334);
+            this.lblUsername.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsername.Location = new System.Drawing.Point(134, 389);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(106, 22);
+            this.lblUsername.Size = new System.Drawing.Size(112, 21);
             this.lblUsername.TabIndex = 4;
             this.lblUsername.Text = "Username:";
             // 
@@ -96,10 +98,10 @@
             // 
             this.lblPhone.AutoSize = true;
             this.lblPhone.BackColor = System.Drawing.Color.Transparent;
-            this.lblPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPhone.Location = new System.Drawing.Point(137, 371);
+            this.lblPhone.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPhone.Location = new System.Drawing.Point(134, 426);
             this.lblPhone.Name = "lblPhone";
-            this.lblPhone.Size = new System.Drawing.Size(148, 22);
+            this.lblPhone.Size = new System.Drawing.Size(159, 21);
             this.lblPhone.TabIndex = 6;
             this.lblPhone.Text = "Phone Number:";
             // 
@@ -107,10 +109,10 @@
             // 
             this.lblLocation.AutoSize = true;
             this.lblLocation.BackColor = System.Drawing.Color.Transparent;
-            this.lblLocation.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLocation.Location = new System.Drawing.Point(137, 417);
+            this.lblLocation.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLocation.Location = new System.Drawing.Point(134, 472);
             this.lblLocation.Name = "lblLocation";
-            this.lblLocation.Size = new System.Drawing.Size(173, 22);
+            this.lblLocation.Size = new System.Drawing.Size(185, 21);
             this.lblLocation.TabIndex = 8;
             this.lblLocation.Text = "Location / District:";
             // 
@@ -126,7 +128,7 @@
             "Mymensingh, ",
             "Khulna, ",
             "Sylhet"});
-            this.cmbLocation.Location = new System.Drawing.Point(331, 417);
+            this.cmbLocation.Location = new System.Drawing.Point(328, 472);
             this.cmbLocation.Name = "cmbLocation";
             this.cmbLocation.Size = new System.Drawing.Size(186, 28);
             this.cmbLocation.TabIndex = 9;
@@ -135,10 +137,10 @@
             // 
             this.lblPassword.AutoSize = true;
             this.lblPassword.BackColor = System.Drawing.Color.Transparent;
-            this.lblPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPassword.Location = new System.Drawing.Point(137, 465);
+            this.lblPassword.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPassword.Location = new System.Drawing.Point(134, 520);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(103, 22);
+            this.lblPassword.Size = new System.Drawing.Size(107, 21);
             this.lblPassword.TabIndex = 10;
             this.lblPassword.Text = "Password:";
             // 
@@ -146,17 +148,18 @@
             // 
             this.lblConfirmPassword.AutoSize = true;
             this.lblConfirmPassword.BackColor = System.Drawing.Color.Transparent;
-            this.lblConfirmPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblConfirmPassword.Location = new System.Drawing.Point(137, 507);
+            this.lblConfirmPassword.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblConfirmPassword.Location = new System.Drawing.Point(134, 562);
             this.lblConfirmPassword.Name = "lblConfirmPassword";
-            this.lblConfirmPassword.Size = new System.Drawing.Size(178, 22);
+            this.lblConfirmPassword.Size = new System.Drawing.Size(189, 21);
             this.lblConfirmPassword.TabIndex = 12;
             this.lblConfirmPassword.Text = "Confirm Password:";
             // 
             // btnRegister
             // 
             this.btnRegister.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnRegister.Location = new System.Drawing.Point(141, 572);
+            this.btnRegister.Font = new System.Drawing.Font("Mongolian Baiti", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegister.Location = new System.Drawing.Point(138, 627);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(164, 56);
             this.btnRegister.TabIndex = 14;
@@ -166,14 +169,14 @@
             // 
             // txtFullName
             // 
-            this.txtFullName.Location = new System.Drawing.Point(259, 286);
+            this.txtFullName.Location = new System.Drawing.Point(256, 341);
             this.txtFullName.Name = "txtFullName";
             this.txtFullName.Size = new System.Drawing.Size(258, 26);
             this.txtFullName.TabIndex = 16;
             // 
             // txtUsername
             // 
-            this.txtUsername.Location = new System.Drawing.Point(259, 330);
+            this.txtUsername.Location = new System.Drawing.Point(256, 385);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(258, 26);
             this.txtUsername.TabIndex = 17;
@@ -181,14 +184,14 @@
             // 
             // txtPhone
             // 
-            this.txtPhone.Location = new System.Drawing.Point(305, 371);
+            this.txtPhone.Location = new System.Drawing.Point(302, 426);
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(212, 26);
             this.txtPhone.TabIndex = 18;
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(259, 465);
+            this.txtPassword.Location = new System.Drawing.Point(256, 520);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(258, 26);
@@ -196,7 +199,7 @@
             // 
             // txtConfirmPassword
             // 
-            this.txtConfirmPassword.Location = new System.Drawing.Point(331, 507);
+            this.txtConfirmPassword.Location = new System.Drawing.Point(328, 562);
             this.txtConfirmPassword.Name = "txtConfirmPassword";
             this.txtConfirmPassword.PasswordChar = '*';
             this.txtConfirmPassword.Size = new System.Drawing.Size(186, 26);
@@ -205,13 +208,24 @@
             // btnBackToLogin
             // 
             this.btnBackToLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btnBackToLogin.Location = new System.Drawing.Point(353, 572);
+            this.btnBackToLogin.Font = new System.Drawing.Font("Mongolian Baiti", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBackToLogin.Location = new System.Drawing.Point(350, 627);
             this.btnBackToLogin.Name = "btnBackToLogin";
             this.btnBackToLogin.Size = new System.Drawing.Size(164, 56);
             this.btnBackToLogin.TabIndex = 21;
             this.btnBackToLogin.Text = "Already registered? Sign In";
             this.btnBackToLogin.UseVisualStyleBackColor = false;
             this.btnBackToLogin.Click += new System.EventHandler(this.btnBackToLogin_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::AgroDoc.Properties.Resources.Gemini_Generated_Image_pgfm7ypgfm7ypgfm_removebg_preview;
+            this.pictureBox1.Location = new System.Drawing.Point(138, 126);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(376, 209);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 22;
+            this.pictureBox1.TabStop = false;
             // 
             // FormRegister
             // 
@@ -235,6 +249,7 @@
             this.Controls.Add(this.lblUsername);
             this.Controls.Add(this.lblSubtitle);
             this.Controls.Add(this.lblTitle);
+            this.Controls.Add(this.pictureBox1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -243,6 +258,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AgroDoc";
             this.Load += new System.EventHandler(this.FormRegister_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -266,5 +282,6 @@
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.TextBox txtConfirmPassword;
         private System.Windows.Forms.Button btnBackToLogin;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
